@@ -1,25 +1,67 @@
+# TFC No Limit
 
-Installation information
-=======
+`TFC No Limit`（`tnl`）是一个面向 **Minecraft 1.21.1 + NeoForge** 环境的 **TerraFirmaCraft / 群峦传说：次世代（TFC）附属模组**。
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+该模组目前的核心目标非常明确：**将 TFC 中原本受重量系统约束的物品最大堆叠数改为可配置**，从而让整合包作者与玩家能够根据自身玩法需求，对不同重量等级的物品堆叠上限进行调整。
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## 主要功能
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- 支持通过配置文件自定义 TFC 不同 `Weight` 等级对应的最大堆叠数
+- 当前已覆盖的重量等级包括：
+  - `VERY_LIGHT`
+  - `LIGHT`
+  - `MEDIUM`
+  - `HEAVY`
+  - `VERY_HEAVY`
+- 在模组加载与配置重载时自动应用新的堆叠规则
+- 通过直接作用于 TFC 底层重量枚举的方式实现覆盖，尽量减少外围补丁式修改带来的不稳定性
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## 当前状态
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+- 模组仍处于较早期的开发阶段
+- 当前版本主要围绕“**解除并配置 TFC 的重量堆叠限制**”这一核心功能展开
+- 项目已经完成基础开发环境搭建，并可在 `Minecraft 1.21.1 + NeoForge + TFC` 环境下进行开发与测试
+
+## 配置说明
+
+模组会生成公共配置文件，允许分别设置不同重量等级的堆叠上限。
+
+当前配置项包括：
+
+- `enableCustomStackSizes`
+- `veryLightStackSize`
+- `lightStackSize`
+- `mediumStackSize`
+- `heavyStackSize`
+- `veryHeavyStackSize`
+
+默认思路是让玩家或整合作者能够根据自己的玩法平衡需求，自由决定各重量等级物品的最大堆叠数。
+
+## 兼容与依赖
+
+- Minecraft `1.21.1`
+- NeoForge `21.1.244`
+- TerraFirmaCraft
+- Patchouli
+
+由于 TFC 本身依赖 Patchouli，因此本模组在开发与运行环境中也需要包含对应依赖。
+
+## 项目说明
+
+这个项目的定位并不是大而全的内容型模组，而是一个更偏向 **机制修正 / 配置扩展** 的 TFC 附属模组。它的目标是为 TFC 提供更多可调节空间，让部分原本写死或较难修改的行为，能够以配置化的形式暴露给玩家和整合作者。
+
+## 维护情况
+
+目前该模组的**维护活跃度偏低**，更新频率可能不会很高，因此短期内不保证持续快速迭代。不过项目仍会在合适的时候继续维护，并根据实际需求逐步完善已有功能。
+
+## 后续计划
+
+除了当前的重量堆叠数配置之外，后续**可能会继续加入更多与 TFC 行为相关的配置功能**。这些内容目前尚未完全确定，但整体方向会继续围绕“让原版 TFC 中较为固定的限制变得更可配置、更便于整合”这一目标展开。
+
+换句话说，`TFC No Limit` 未来不一定只关注堆叠数，也有可能逐步发展为一个更通用的 **TFC 配置增强型附属模组**。
+
+## 许可证
+
+本项目当前使用许可证：
+
+`GNU GENERAL PUBLIC LICENSE Version 3`
