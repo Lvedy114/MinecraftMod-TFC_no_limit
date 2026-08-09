@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.lvedy.tfc_no_limit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "tnl.refmap.json",
+  "mixins": [
+    "TFCComponentsMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

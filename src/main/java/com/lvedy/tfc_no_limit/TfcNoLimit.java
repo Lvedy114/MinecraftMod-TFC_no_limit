@@ -118,8 +118,7 @@ public class TfcNoLimit {
         LOGGER.info("HELLO from server starting");
     }
 
-    @SubscribeEvent(priority = EventPriority.LOWEST)
-    public void onTagsUpdated(TagsUpdatedEvent event) {
+    public static void applyCustomStackSizes() {
         if (!Config.ENABLE_CUSTOM_STACK_SIZES.get()) return;
 
         try {
@@ -159,7 +158,7 @@ public class TfcNoLimit {
             }
 
             setAllowModificationsMethod.invoke(null, false);
-            LOGGER.info("Applied TFC No Limit custom stack sizes!");
+            LOGGER.info("Applied TFC No Limit custom stack sizes via Mixin!");
         } catch (Exception e) {
             LOGGER.error("Failed to apply custom stack sizes", e);
         }
