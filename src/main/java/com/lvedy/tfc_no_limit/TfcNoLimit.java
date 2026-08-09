@@ -12,6 +12,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -19,6 +22,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
@@ -26,10 +30,17 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.event.TagsUpdatedEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import net.dries007.tfc.common.component.size.ItemSizeManager;
+import net.dries007.tfc.common.component.size.Weight;
+
+import java.lang.reflect.Field;
+import java.util.Map;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TfcNoLimit.MODID)
@@ -91,14 +102,6 @@ public class TfcNoLimit {
     private void commonSetup(FMLCommonSetupEvent event) {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
-
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-        }
-
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
-
-        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
     // Add the example block item to the building blocks tab
@@ -113,5 +116,52 @@ public class TfcNoLimit {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public void onTagsUpdated(TagsUpdatedEvent event) {
+        if (!Config.ENABLE_CUSTOM_STACK_SIZES.get()) return;
+
+        try {
+            Class<?> tfcComponentsClass = Class.forName("net.dries007.tfc.common.component.TFCComponents");
+            java.lang.reflect.Method modifyComponentsMethod = tfcComponentsClass.getDeclaredMethod("modifyDefaultComponentsFrom", Item.class, DataComponentPatch.class);
+            modifyComponentsMethod.setAccessible(true);
+            java.lang.reflect.Method setAllowModificationsMethod = tfcComponentsClass.getDeclaredMethod("setAllowComponentModifications", boolean.class);
+            setAllowModificationsMethod.setAccessible(true);
+
+            setAllowModificationsMethod.invoke(null, true);
+
+            for (Item item : BuiltInRegistries.ITEM) {
+                ItemStack stack = new ItemStack(item);
+                Weight weight = ItemSizeManager.get(stack).getWeight(stack);
+
+                int newStackSize = 64;
+                if (weight == Weight.VERY_LIGHT) {
+                    newStackSize = Config.VERY_LIGHT_STACK_SIZE.get();
+                } else if (weight == Weight.LIGHT) {
+                    newStackSize = Config.LIGHT_STACK_SIZE.get();
+                } else if (weight == Weight.MEDIUM) {
+                    newStackSize = Config.MEDIUM_STACK_SIZE.get();
+                } else if (weight == Weight.HEAVY) {
+                    newStackSize = Config.HEAVY_STACK_SIZE.get();
+                } else if (weight == Weight.VERY_HEAVY) {
+                    newStackSize = Config.VERY_HEAVY_STACK_SIZE.get();
+                }
+
+                int currentMaxStackSize = item.components().getOrDefault(DataComponents.MAX_STACK_SIZE, 64);
+
+                if (currentMaxStackSize != newStackSize) {
+                    DataComponentPatch patch = DataComponentPatch.builder()
+                            .set(DataComponents.MAX_STACK_SIZE, newStackSize)
+                            .build();
+                    modifyComponentsMethod.invoke(null, item, patch);
+                }
+            }
+
+            setAllowModificationsMethod.invoke(null, false);
+            LOGGER.info("Applied TFC No Limit custom stack sizes!");
+        } catch (Exception e) {
+            LOGGER.error("Failed to apply custom stack sizes", e);
+        }
     }
 }
