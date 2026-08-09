@@ -35,6 +35,12 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        url = "https://maven.blamejared.com"
+        content {
+            includeGroup "vazkii.patchouli"
+        }
+    }
 }
 
 base {
@@ -124,6 +130,9 @@ configurations {
 dependencies {
     // TerraFirmaCraft dependency
     implementation "curse.maven:terrafirmacraft-302973:8365958"
+    
+    // Patchouli dependency required by TFC
+    implementation "vazkii.patchouli:Patchouli:1.21.1-93-NEOFORGE"
     
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
