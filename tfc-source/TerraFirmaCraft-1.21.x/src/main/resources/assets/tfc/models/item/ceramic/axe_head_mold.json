@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "loader": "tfc:fluid_container",
+  "parent": "neoforge:item/default",
+  "textures": {
+    "base": "tfc:item/ceramic/fired_mold/axe_head_empty",
+    "fluid": "tfc:item/ceramic/fired_mold/axe_head_overlay"
+  }
+}

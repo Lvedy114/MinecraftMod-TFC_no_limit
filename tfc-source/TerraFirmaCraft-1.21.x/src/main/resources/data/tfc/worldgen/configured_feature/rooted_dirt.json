@@ -1,0 +1,76 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:soil_disc",
+  "config": {
+    "min_radius": 4,
+    "max_radius": 6,
+    "height": 2,
+    "integrity": 0.8,
+    "states": [
+      {
+        "replace": "tfc:grass/entisol",
+        "with": "tfc:rooted_dirt/entisol"
+      },
+      {
+        "replace": "tfc:dirt/entisol",
+        "with": "tfc:rooted_dirt/entisol"
+      },
+      {
+        "replace": "tfc:grass/aridisol",
+        "with": "tfc:rooted_dirt/aridisol"
+      },
+      {
+        "replace": "tfc:dirt/aridisol",
+        "with": "tfc:rooted_dirt/aridisol"
+      },
+      {
+        "replace": "tfc:grass/oxisol",
+        "with": "tfc:rooted_dirt/oxisol"
+      },
+      {
+        "replace": "tfc:dirt/oxisol",
+        "with": "tfc:rooted_dirt/oxisol"
+      },
+      {
+        "replace": "tfc:grass/fluvisol",
+        "with": "tfc:rooted_dirt/fluvisol"
+      },
+      {
+        "replace": "tfc:dirt/fluvisol",
+        "with": "tfc:rooted_dirt/fluvisol"
+      },
+      {
+        "replace": "tfc:grass/andisol",
+        "with": "tfc:rooted_dirt/andisol"
+      },
+      {
+        "replace": "tfc:dirt/andisol",
+        "with": "tfc:rooted_dirt/andisol"
+      },
+      {
+        "replace": "tfc:grass/podzol",
+        "with": "tfc:rooted_dirt/podzol"
+      },
+      {
+        "replace": "tfc:dirt/podzol",
+        "with": "tfc:rooted_dirt/podzol"
+      },
+      {
+        "replace": "tfc:grass/alfisol",
+        "with": "tfc:rooted_dirt/alfisol"
+      },
+      {
+        "replace": "tfc:dirt/alfisol",
+        "with": "tfc:rooted_dirt/alfisol"
+      },
+      {
+        "replace": "tfc:grass/mollisol",
+        "with": "tfc:rooted_dirt/mollisol"
+      },
+      {
+        "replace": "tfc:dirt/mollisol",
+        "with": "tfc:rooted_dirt/mollisol"
+      }
+    ]
+  }
+}

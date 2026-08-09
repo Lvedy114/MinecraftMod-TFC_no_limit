@@ -1,0 +1,35 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Değerli Taşlar",
+  "category": "tfc:mechanics",
+  "icon": "tfc:gem/opal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Değerli taşlar, $(thing)nehir altları$() ve $(l:the_world/geology)Yanardağlar$() gibi çeşitli farklı yerlerde ortaya çıkan bir mineral türüdür. Kesin koşullar hakkında bilgi için $(l:the_world/ores_and_minerals)cevherler ve mineraller bölümüne$() bakınız."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:gem_powders",
+      "link_recipes": false,
+      "text": "Değerli taşlar, bir $(l:mechanics/quern)El Değirmeni$() kullanılarak toz haline getirilebilir. Değerli taş tozları, özellikle $(l:mechanics/glassworking_applications#coloring)Cam Renklendirme$() işleminde oldukça kullanışlıdır."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:mechanics/sluices)Olukla Yıkama$() ve $(l:mechanics/panning)Eleme$() yoluyla $(thing)İşlenmemiş Değerli Taşlar$() elde edilebilir. Oluk ile elde edilebilecek değerli taş, işlenen yatağın kaya türüne bağlıdır."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Değerli taşlar, normal cevherlerden daha yüksek $(thing)Sertlik$() değerlerine sahiptir ve kırılmaları için farklı güçte aletler gerektirir. Aşağıda, bir değerli taş cevheri bloğunu kırmak için gereken minimum $(thing)Kazma$() seviyesi özetlenmiştir:$(br)$(li)Ametist: Çelik$(li)Elmas: Siyah Çelik$(li)Zümrüt: Çelik$(li)Lapis Lazuli: Dövme Demir$(li)Opal: Dövme Demir$(li)Pirit: Bakır$(li)Yakut: Siyah Çelik$(li)Safir: Siyah Çelik$(li)Topaz: Çelik"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bir değerli taşı kesmek için $(thing)Zımpara Kağıdı$() üretmelisiniz. Zımpara kağıdı; Siyah Kum, Akı, Tutkal, herhangi bir Değerli Taş Tozu ve Kağıt kullanılarak yapılır. Kesilmemiş bir değerli taşı zımpara kağıdı ile işlemek, taşı keser."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/sandpaper"
+    }
+  ],
+  "read_by_default": true
+}

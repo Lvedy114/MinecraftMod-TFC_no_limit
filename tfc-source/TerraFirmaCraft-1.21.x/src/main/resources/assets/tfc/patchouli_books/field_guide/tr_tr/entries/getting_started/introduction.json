@@ -1,0 +1,178 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Giriş",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/loose/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TerraFirmaCraft'ta elde edebileceğiniz ilk şeyler çubuklar, ince dallar ve gevşek taşlardır. Bunlar neredeyse her iklimde, yerde dağınık halde bulunabilirler. Bunları toplamak için $(item)$(k:key.use)$() tuşunu kullanın veya kırın."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "1    ",
+            " 2  4",
+            "  03 ",
+            " 4   ",
+            "    5"
+          ],
+          [
+            "GGGGG",
+            "GGGGG",
+            "GGGGG",
+            "GGGGG",
+            "GGGGG"
+          ]
+        ],
+        "mapping": {
+          "G": "tfc:grass/aridisol",
+          "1": "tfc:rock/loose/granite[count=1]",
+          "2": "tfc:rock/loose/granite[count=2]",
+          "3": "tfc:rock/loose/granite[count=3]",
+          "4": "tfc:groundcover/stick",
+          "5": "tfc:wood/twig/ash"
+        }
+      },
+      "name": "Örnek",
+      "text": "Birkaç yaygın çubuk ve taş.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Yerde çubuk ve ince dal toplamaya ek olarak, çubuklar yaprakları yumruğunuzla kırarak da elde edilebilir. Elinizde yeterince taş ve çubuk olduğunda, $(thing)Yontma$() işlemine başlamaya hazırsınız demektir. Yontma, belirli bir şekil oluşturmak için iki taşın birbirine vurulduğu bir işlemdir. Yontma yapmak için, önce elinizde en az iki taş tutun, ardından havada sağ tıklayın; bu, $(thing)Yontma Arayüzünü$() açacaktır."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/rock_knapping.png"
+      ],
+      "text": "Yontma Arayüzü.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Belirli bir eşyayı yontmak için, istediğiniz deseni oluşturana kadar kareleri kaldırmanız gerekir. Örneğin, sağda gösterilen tarifi eşleştirerek bir bıçak ağzı oluşturun.$(br2)Üretim tariflerinde olduğu gibi, istenen desenin konumu çıktı için önemli değildir ve bazı tariflerin geçerli birden fazla varyantı vardır."
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "anchor": "knife",
+      "recipes": [
+        "tfc:knapping/stone/knife_head/sedimentary",
+        "tfc:knapping/stone/knife_head/metamorphic",
+        "tfc:knapping/stone/knife_head/igneous_extrusive",
+        "tfc:knapping/stone/knife_head/igneous_intrusive"
+      ],
+      "text": "Birkaç farklı kaya türünden üretilmiş bir bıçak ağzı."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/stone/knife/sedimentary",
+      "text": "Tüm taş alet başlıkları, bir alet haline getirmek için bir çubuk veya ince dal ile birleştirilebilir.$(br2)Taş bıçak, bitkileri kırarak $(thing)Saman$() hasat etmek için kullanılabilir."
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "recipes": [
+        "tfc:knapping/stone/axe_head/sedimentary",
+        "tfc:knapping/stone/axe_head/metamorphic",
+        "tfc:knapping/stone/axe_head/igneous_extrusive",
+        "tfc:knapping/stone/axe_head/igneous_intrusive"
+      ],
+      "text": "$(thing)Baltalar$(), kütükler ve yapraklar dahil olmak üzere tüm ağaçları kesmek için kullanılabilir. Ancak, fidanlar ve çubuklar yalnızca yapraklar tek tek kırılırsa elde edilebilir."
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "recipes": [
+        "tfc:knapping/stone/shovel_head/sedimentary",
+        "tfc:knapping/stone/shovel_head/metamorphic",
+        "tfc:knapping/stone/shovel_head/igneous_extrusive",
+        "tfc:knapping/stone/shovel_head/igneous_intrusive"
+      ],
+      "text": "$(thing)Kürekler$(), toprak tipi blokları kazmak için kullanılabilir. Ayrıca $(thing)Toprak$() veya $(thing)Çimen$() üzerinde $(item)kullanılarak$() $(thing)Yollar$() oluşturmak için de kullanılabilirler."
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "recipes": [
+        "tfc:knapping/stone/hoe_head/sedimentary",
+        "tfc:knapping/stone/hoe_head/metamorphic",
+        "tfc:knapping/stone/hoe_head/igneous_extrusive",
+        "tfc:knapping/stone/hoe_head/igneous_intrusive"
+      ],
+      "text": "$(thing)Çapalar$(), $(l:mechanics/crops)Tarım$() için yararlı aletlerdir, ancak yaprakları ve diğer bitki maddelerini kesmek için de kullanılabilirler."
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "recipes": [
+        "tfc:knapping/stone/hammer_head/sedimentary",
+        "tfc:knapping/stone/hammer_head/metamorphic",
+        "tfc:knapping/stone/hammer_head/igneous_extrusive",
+        "tfc:knapping/stone/hammer_head/igneous_intrusive"
+      ],
+      "text": "$(thing)Çekiçler$(), $(l:mechanics/damage_types)Ezici$() silahlar olarak kullanılabilir, ancak daha çok $(l:getting_started/primitive_anvils)Demircilik$() için kullanılan önemli aletlerdir."
+    },
+    {
+      "type": "tfc:rock_knapping_recipe",
+      "recipes": [
+        "tfc:knapping/stone/javelin_head/sedimentary",
+        "tfc:knapping/stone/javelin_head/metamorphic",
+        "tfc:knapping/stone/javelin_head/igneous_extrusive",
+        "tfc:knapping/stone/javelin_head/igneous_intrusive"
+      ],
+      "text": "Son olarak, $(thing)Cirit$(), hedeflere fırlatılabilen veya $(l:mechanics/damage_types)Delici$() bir silah olarak kullanılabilen ilkel bir silahtır."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0,
+  "extra_recipe_mappings": {
+    "tfc:stone/knife_head/sedimentary": 5,
+    "tfc:stone/knife_head/metamorphic": 5,
+    "tfc:stone/knife_head/igneous_extrusive": 5,
+    "tfc:stone/knife_head/igneous_intrusive": 5,
+    "tfc:stone/knife/sedimentary": 5,
+    "tfc:stone/knife/metamorphic": 5,
+    "tfc:stone/knife/igneous_extrusive": 5,
+    "tfc:stone/knife/igneous_intrusive": 5,
+    "tfc:stone/axe_head/sedimentary": 7,
+    "tfc:stone/axe_head/metamorphic": 7,
+    "tfc:stone/axe_head/igneous_extrusive": 7,
+    "tfc:stone/axe_head/igneous_intrusive": 7,
+    "tfc:stone/axe/sedimentary": 7,
+    "tfc:stone/axe/metamorphic": 7,
+    "tfc:stone/axe/igneous_extrusive": 7,
+    "tfc:stone/axe/igneous_intrusive": 7,
+    "tfc:stone/shovel_head/sedimentary": 8,
+    "tfc:stone/shovel_head/metamorphic": 8,
+    "tfc:stone/shovel_head/igneous_extrusive": 8,
+    "tfc:stone/shovel_head/igneous_intrusive": 8,
+    "tfc:stone/shovel/sedimentary": 8,
+    "tfc:stone/shovel/metamorphic": 8,
+    "tfc:stone/shovel/igneous_extrusive": 8,
+    "tfc:stone/shovel/igneous_intrusive": 8,
+    "tfc:stone/hoe_head/sedimentary": 9,
+    "tfc:stone/hoe_head/metamorphic": 9,
+    "tfc:stone/hoe_head/igneous_extrusive": 9,
+    "tfc:stone/hoe_head/igneous_intrusive": 9,
+    "tfc:stone/hoe/sedimentary": 9,
+    "tfc:stone/hoe/metamorphic": 9,
+    "tfc:stone/hoe/igneous_extrusive": 9,
+    "tfc:stone/hoe/igneous_intrusive": 9,
+    "tfc:stone/hammer_head/sedimentary": 10,
+    "tfc:stone/hammer_head/metamorphic": 10,
+    "tfc:stone/hammer_head/igneous_extrusive": 10,
+    "tfc:stone/hammer_head/igneous_intrusive": 10,
+    "tfc:stone/hammer/sedimentary": 10,
+    "tfc:stone/hammer/metamorphic": 10,
+    "tfc:stone/hammer/igneous_extrusive": 10,
+    "tfc:stone/hammer/igneous_intrusive": 10,
+    "tfc:stone/javelin_head/sedimentary": 11,
+    "tfc:stone/javelin_head/metamorphic": 11,
+    "tfc:stone/javelin_head/igneous_extrusive": 11,
+    "tfc:stone/javelin_head/igneous_intrusive": 11,
+    "tfc:stone/javelin/sedimentary": 11,
+    "tfc:stone/javelin/metamorphic": 11,
+    "tfc:stone/javelin/igneous_extrusive": 11,
+    "tfc:stone/javelin/igneous_intrusive": 11
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:story/copper_age",
+  "criteria": {
+    "tools/bronze": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:tools/bronze"
+          }
+        ]
+      }
+    },
+    "tools/bismuth_bronze": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:tools/bismuth_bronze"
+          }
+        ]
+      }
+    },
+    "tools/black_bronze": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:tools/black_bronze"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:metal/sword/bronze"
+    },
+    "title": {
+      "translate": "tfc.advancements.story.bronze_age.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.story.bronze_age.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/rock/mossy_cobble/diorite.png"
+  },
+  "requirements": [
+    [
+      "tools/bronze",
+      "tools/bismuth_bronze",
+      "tools/black_bronze"
+    ]
+  ]
+}

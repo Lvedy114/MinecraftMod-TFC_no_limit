@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/root",
+  "criteria": {
+    "special_condition": {
+      "trigger": "tfc:fed_animal",
+      "conditions": {
+        "entity": {
+          "type": "#tfc:animals"
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:food/wheat_grain",
+      "components": {
+        "tfc:food": {
+          "creation_date": -3
+        }
+      }
+    },
+    "title": {
+      "translate": "tfc.advancements.world.familiarity.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.familiarity.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "special_condition"
+    ]
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Ateş Çukurları",
+  "category": "tfc:getting_started",
+  "icon": "tfc:firepit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "firestarter",
+      "text": "$(thing)Ateş$(), önemli bir teknolojik ilerlemedir. Ateş yakmak için bir $(thing)Ateş Başlatıcı$()'ya ihtiyacınız olacak. Kullanmak için, $(item)$(k:key.use)$() tuşunu yerde basılı tutmanız yeterlidir. Birkaç an sonra duman ve ardından ateş oluşacaktır. Başarıyla yakmak birkaç deneme gerektirebilir."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/firestarter",
+      "text": "Ateş başlatıcı üretimi iki çubuk ile yapılabilir."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bir ateş başlatıcı ile artık bir $(thing)Ateş Çukuru$() yapmak mümkündür. Bir tane yapmak için bir $(thing)kütük$(), üç $(thing)çubuk$() ve isteğe bağlı olarak beş adede kadar $(thing)çıra$() gerekecektir. Çıra; kağıt ürünleri, saman veya çam kozalakları gibi eşyalar olabilir ve kullanılan eşya başına ateş çukurunun başarıyla oluşturulma şansını yüzde 10 artırır. Tüm eşyaları aynı blok üzerinde yere atın ($(item)$(k:key.drop)$()). Ardından, eşyaların üzerinde süzüldüğü blok üzerinde ateş başlatıcıyı kullanın.",
+      "title": "Ateş Çukuru"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "",
+      "text": "Başarılı olduysanız, bir ateş çukuru oluşturulacaktır.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ateş çukurunu kullanmak artık ateş çukuru ekranını açacaktır. Solda dört adet $(thing)yakıt$() yuvası bulunur. Kütükler, Turba ve Çubuk Demetleri, en üstteki yuvaya yerleştirilerek ateş çukuru yakıtı olarak kullanılabilir. Yakıt, en alttaki yuvadan tüketilmeye başlanır. Ateş çukurunun mevcut $(thing)Sıcaklığını$() gösteren bir gösterge ve sağ tarafta $(l:mechanics/heating)ısıtılacak$() eşyalar için bir yuva bulunur."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/firepit.png"
+      ],
+      "text": "Ateş Çukuru Ekranı",
+      "border": false
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/torch_from_stick",
+      "text": "Ateş çukurunda birçok yararlı eşya ısıtılarak yapılabilir. Çubuklar ısıtılabilir ve bu işlem sonucunda iki $(thing)Meşale$() üretilir. Meşalelerin zamanla söneceğini ve bir $(thing)Ateş Başlatıcı$() kullanılarak ya da üzerlerinde başka bir $(thing)Meşale$() kullanılarak yeniden yakılmaları gerektiğini unutmayın."
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/food/cooked_cod",
+      "text": "Ateş çukuru aynı zamanda $(thing)yemek pişirmek$() için de iyi bir araçtır. Tüm çiğ etler ve hamurlar, raf ömürlerini uzatacak şekilde ateş çukurunda pişirilebilir. (Bu konuda daha fazla bilgi $(l:mechanics/decay)burada$() bulunabilir)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ateş çukuru, üzerine bir $(thing)Kürek$() kullanılarak her an söndürülebilir.$(br2)Ateş çukuruna işlevselliğini genişletmek için başka cihazlar da eklenebilir. $(thing)Dövme Demir Izgara$() kullanmak ateş çukurunu bir $(l:mechanics/grill)Izgaraya$() dönüştürürken, $(thing)Seramik Tencere$() kullanmak ateş çukurunu bir $(l:mechanics/pot)Tencereye$() dönüştürecektir. Her iki cihazı da kaldırmak için $(item)$(k:key.sneak)$() tuşunu basılı tutarken $(item)$(k:key.use)$() tuşunu kullanın. Sıcak bir ızgarayı veya tencereyi çıkarmaya çalışırken dikkatli olun!"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Izgara veya tencere eklenmiş bir ateş çukuru.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:firepit"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:grill"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:pot"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ateş çukuru yakıtlarının farklı saflık seviyeleri vardır. Ateşe saf olmayan yakıtlar eklemek, daha fazla duman çıkarmasına neden olur. Eğer ateş çok kirli yanarsa, duman havada çok yükseğe çıkmaya başlar. En saf yakıtlar kütüklerdir; çam ise en az saf olan kütüktür. Çam kozalakları ve dökülmüş yapraklar gibi yakıtlar, yemek pişirmek için yeterince ısınmazlar ve oldukça saf değildirler."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/flint_and_pyrite",
+      "text": "Çakmak taşı ve pirit veya daha sonra çakmak taşı ve çelik kullanılarak daha gelişmiş bir ateş başlatıcı oluşturulabilir."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "tfc:firepit": 0,
+    "tfc:torch": 6,
+    "minecraft:torch": 6,
+    "tfc:flint_and_pyrite": 11,
+    "tfc:ore/pyrite": 11
+  }
+}

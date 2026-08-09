@@ -1,0 +1,388 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/nugget",
+  "criteria": {
+    "bismuth": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/bismuth"
+          }
+        ]
+      }
+    },
+    "bismuth_bronze": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/bismuth_bronze"
+          }
+        ]
+      }
+    },
+    "black_bronze": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/black_bronze"
+          }
+        ]
+      }
+    },
+    "bronze": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/bronze"
+          }
+        ]
+      }
+    },
+    "brass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/brass"
+          }
+        ]
+      }
+    },
+    "copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/copper"
+          }
+        ]
+      }
+    },
+    "gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/gold"
+          }
+        ]
+      }
+    },
+    "nickel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/nickel"
+          }
+        ]
+      }
+    },
+    "rose_gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/rose_gold"
+          }
+        ]
+      }
+    },
+    "silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/silver"
+          }
+        ]
+      }
+    },
+    "tin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/tin"
+          }
+        ]
+      }
+    },
+    "zinc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/zinc"
+          }
+        ]
+      }
+    },
+    "sterling_silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/sterling_silver"
+          }
+        ]
+      }
+    },
+    "wrought_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/wrought_iron"
+          }
+        ]
+      }
+    },
+    "cast_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/cast_iron"
+          }
+        ]
+      }
+    },
+    "pig_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/pig_iron"
+          }
+        ]
+      }
+    },
+    "steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/steel"
+          }
+        ]
+      }
+    },
+    "black_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/black_steel"
+          }
+        ]
+      }
+    },
+    "blue_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/blue_steel"
+          }
+        ]
+      }
+    },
+    "red_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/red_steel"
+          }
+        ]
+      }
+    },
+    "weak_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/weak_steel"
+          }
+        ]
+      }
+    },
+    "weak_blue_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/weak_blue_steel"
+          }
+        ]
+      }
+    },
+    "weak_red_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/weak_red_steel"
+          }
+        ]
+      }
+    },
+    "high_carbon_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/high_carbon_steel"
+          }
+        ]
+      }
+    },
+    "high_carbon_black_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/high_carbon_black_steel"
+          }
+        ]
+      }
+    },
+    "high_carbon_blue_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/high_carbon_blue_steel"
+          }
+        ]
+      }
+    },
+    "high_carbon_red_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/high_carbon_red_steel"
+          }
+        ]
+      }
+    },
+    "unknown": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:metal/ingot/unknown"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:metal/ingot/gold"
+    },
+    "title": {
+      "translate": "tfc.advancements.world.metallurgist.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.metallurgist.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "bismuth"
+    ],
+    [
+      "bismuth_bronze"
+    ],
+    [
+      "black_bronze"
+    ],
+    [
+      "bronze"
+    ],
+    [
+      "brass"
+    ],
+    [
+      "copper"
+    ],
+    [
+      "gold"
+    ],
+    [
+      "nickel"
+    ],
+    [
+      "rose_gold"
+    ],
+    [
+      "silver"
+    ],
+    [
+      "tin"
+    ],
+    [
+      "zinc"
+    ],
+    [
+      "sterling_silver"
+    ],
+    [
+      "wrought_iron"
+    ],
+    [
+      "cast_iron"
+    ],
+    [
+      "pig_iron"
+    ],
+    [
+      "steel"
+    ],
+    [
+      "black_steel"
+    ],
+    [
+      "blue_steel"
+    ],
+    [
+      "red_steel"
+    ],
+    [
+      "weak_steel"
+    ],
+    [
+      "weak_blue_steel"
+    ],
+    [
+      "weak_red_steel"
+    ],
+    [
+      "high_carbon_steel"
+    ],
+    [
+      "high_carbon_black_steel"
+    ],
+    [
+      "high_carbon_blue_steel"
+    ],
+    [
+      "high_carbon_red_steel"
+    ],
+    [
+      "unknown"
+    ]
+  ]
+}

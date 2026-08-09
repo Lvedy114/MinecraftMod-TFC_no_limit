@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Kanallarla Döküm",
+  "category": "tfc:mechanics",
+  "icon": "tfc:channel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Kanallar$() ve $(thing)Kalıp Masaları$() kullanarak bir $(l:mechanics/crucible)Potadan$() aynı anda birden fazla kalıba döküm yapabilirsiniz. $(thing)Kalıp Masalarını$(), $(thing)Kanalları$() kullanarak $(l:mechanics/crucible)Potaya$() bağlamanız ve $(l:mechanics/crucible)Potanın$() yanındaki $(thing)Kanala$() sağ tıklamanız yeterlidir. Bir $(l:getting_started/pottery#mold)Kalıbı$() yerleştirmek veya çıkarmak için $(thing)Kalıp Masasına$() Shift+sağ tıklayın."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_channel_2",
+      "text": "$(l:getting_started/pottery#knapping)Yontarak$() birkaç $(thing)Pişmemiş Kanal$() elde etme."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_mold_table",
+      "text": "$(l:getting_started/pottery#knapping)Yontarak$() bir $(thing)Pişmemiş Kalıp Masası$() elde etme."
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/channel",
+      "text": "Kanallar ve kalıp masası yontulduktan sonra, herhangi bir çömlek parçası gibi $(thing)pişirilmeleri$() gerekir."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:channel_casting",
+      "name": "Bir döküm düzeneği",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Bir $(thing)Kalıp Masası$() üzerinde $(l:mechanics/bellows)Körük$() kullanmak metalin daha hızlı soğumasını sağlar.$()$(li)Bir $(thing)Kanalı$() kızıltaş sinyali ile etkinleştirmek metalin dökülmesini başlatır.$()$(li)$(thing)Kalıp Masaları$() karşılaştırıcı sinyali verir.",
+      "title": "Otomasyon"
+    }
+  ],
+  "read_by_default": true
+}

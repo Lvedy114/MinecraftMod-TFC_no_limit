@@ -1,0 +1,107 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "高級建築材料",
+  "category": "tfc:mechanics",
+  "icon": "tfc:brick/rhyolite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "除了石器時代的基礎$(l:getting_started/building_materials)建築材料$()，金屬工具可以幫你生產更多的高級建築材料"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br) 1. $(l:mechanics/advanced_building_materials#alabaster)雪花石膏$()$(br) 2. $(l:mechanics/advanced_building_materials#bricks_and_mortar)石磚和砂漿$()$(br)",
+      "title": "材料目錄"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "plaster",
+      "text": "雪花石膏是一種用$(l:the_world/ores_and_minerals#gypsum)石膏$()礦做成的建築材料。石膏可以直接在物品欄中做成雪花石膏，不過等以後有了$(l:mechanics/barrels)桶$()會有更高效的製作方法。",
+      "title": "Plaster"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/alabaster_brick",
+      "recipe2": "tfc:crafting/alabaster/bricks",
+      "title": "Plaster Bricks"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Plaster can be $(l:mechanics/dye)dyed$() in a $(l:mechanics/barrels)Barrel$() of dye into any color. Raw Plaster blocks can also be $(l:mechanics/chisel)chiseled$() into $(thing)Polished Plaster$() using the $(thing)Smooth$() chisel mode, or crafted into stairs, slabs, or walls.",
+      "title": "Plaster Decorations"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/alabaster/bricks/magenta_stairs",
+      "recipe2": "tfc:crafting/alabaster/polished/magenta_slab",
+      "title": "樓梯和台階"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "bricks_and_mortar",
+      "text": "將一些小石子與$(l:mechanics/chisel)鑿子$()在合成欄中合成就可以得到這種巖石的$(thing)磚$()。將磚與$(thing)砂漿$()合成就能做成堅固的建築方塊。$(br2)砂漿可以通過將$(thing)沙子$()加入裝有$(l:mechanics/barrels#limewater)石灰水$()的大桶得到。",
+      "title": "石磚和砂漿"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/brick/gneiss",
+      "recipe2": "tfc:crafting/rock/bricks/gneiss"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "你還可以製作其他的石頭裝飾方塊，例如$(thing)裂紋磚$()和$(thing)雕刻過的石磚$()。將圓石或石磚方塊放在水下的其他苔石旁，苔蘚就會擴散，將其轉換為$(thing)苔石$()或苔石磚。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/rock/chiseled/gneiss",
+      "recipe2": "tfc:crafting/rock/cracked_bricks/gneiss"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:alabaster/raw": 2,
+    "tfc:alabaster/polished": 2,
+    "tfc:rock/chiseled/granite": 8,
+    "tfc:rock/chiseled/diorite": 8,
+    "tfc:rock/chiseled/gabbro": 8,
+    "tfc:rock/chiseled/shale": 8,
+    "tfc:rock/chiseled/claystone": 8,
+    "tfc:rock/chiseled/limestone": 8,
+    "tfc:rock/chiseled/conglomerate": 8,
+    "tfc:rock/chiseled/dolomite": 8,
+    "tfc:rock/chiseled/chert": 8,
+    "tfc:rock/chiseled/chalk": 8,
+    "tfc:rock/chiseled/tuff": 8,
+    "tfc:rock/chiseled/rhyolite": 8,
+    "tfc:rock/chiseled/basalt": 8,
+    "tfc:rock/chiseled/andesite": 8,
+    "tfc:rock/chiseled/dacite": 8,
+    "tfc:rock/chiseled/quartzite": 8,
+    "tfc:rock/chiseled/slate": 8,
+    "tfc:rock/chiseled/phyllite": 8,
+    "tfc:rock/chiseled/schist": 8,
+    "tfc:rock/chiseled/gneiss": 8,
+    "tfc:rock/chiseled/marble": 8,
+    "tfc:rock/cracked_bricks/granite": 8,
+    "tfc:rock/cracked_bricks/diorite": 8,
+    "tfc:rock/cracked_bricks/gabbro": 8,
+    "tfc:rock/cracked_bricks/shale": 8,
+    "tfc:rock/cracked_bricks/claystone": 8,
+    "tfc:rock/cracked_bricks/limestone": 8,
+    "tfc:rock/cracked_bricks/conglomerate": 8,
+    "tfc:rock/cracked_bricks/dolomite": 8,
+    "tfc:rock/cracked_bricks/chert": 8,
+    "tfc:rock/cracked_bricks/chalk": 8,
+    "tfc:rock/cracked_bricks/tuff": 8,
+    "tfc:rock/cracked_bricks/rhyolite": 8,
+    "tfc:rock/cracked_bricks/basalt": 8,
+    "tfc:rock/cracked_bricks/andesite": 8,
+    "tfc:rock/cracked_bricks/dacite": 8,
+    "tfc:rock/cracked_bricks/quartzite": 8,
+    "tfc:rock/cracked_bricks/slate": 8,
+    "tfc:rock/cracked_bricks/phyllite": 8,
+    "tfc:rock/cracked_bricks/schist": 8,
+    "tfc:rock/cracked_bricks/gneiss": 8,
+    "tfc:rock/cracked_bricks/marble": 8
+  }
+}

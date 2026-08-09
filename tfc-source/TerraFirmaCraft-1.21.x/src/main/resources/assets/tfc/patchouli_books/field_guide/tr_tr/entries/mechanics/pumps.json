@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Pompalar",
+  "category": "tfc:mechanics",
+  "icon": "tfc:steel_pipe",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Çelik Pompalar$() ve $(thing)Çelik Borular$(), $(thing)Su$(), $(thing)Tuzlu Su$() ve $(thing)Kaynak Suyu$() gibi sıvıları taşımak için yararlı bloklardır. Ayrıca kaynak bloklarını taşımak ve küçük kapalı alanları doldurmak için de kullanılabilirler. $(l:mechanics/aqueducts)Su Kemerleri$()'nin aksine, kaynak bloklarını yukarı doğru taşımak için de kullanılabilirler."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/steel_pipe",
+      "text": "Çelik boru, tahmin edilebileceği gibi, bir $(l:mechanics/anvils)Örs$() üzerinde $(l:mechanics/steel)Çelik$() kullanılarak üretilebilir. $(thing)Çelik Pompa$() ise bazı $(thing)Çelik Borular$() ve $(l:getting_started/primitive_alloys#brass)Pirinç Mekanizmalar$() kullanılarak üretilebilir."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/steel_pump",
+      "text": "Pompayı çalıştırmak için ayrıca bir $(l:mechanics/crankshaft)Krank mili$() ve bir $(l:mechanics/mechanical_power)Mekanik Güç$() kaynağına ihtiyacınız olacaktır:$(br)$(li)Pompa, $(bold)alt$() kısmından bir boruya bağlanmalıdır."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Dar tarafta, pompa bir $(l:mechanics/crankshaft)Krank milinin$() işlevsel ucuna bitişik olmalıdır.$(li)Pompa $(bold)16$() bloğa kadar ulaşabilir. Borunun ucu hedef sıvıya $(bold)batırılmış$() ve bir kaynak sıvı bloğuna bitişik olmalıdır.$(li)Krank mili aktifse, sıvı yukarı çekilecek ve $(thing)Pompanın$() geniş ucunda belirecektir.$(li)Pompa, $(bold)32$() bloğa kadar olan kapalı bir alanı kaynak bloklarıyla doldurabilir."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:steel_pipe": 0,
+    "tfc:steel_pump": 0
+  }
+}

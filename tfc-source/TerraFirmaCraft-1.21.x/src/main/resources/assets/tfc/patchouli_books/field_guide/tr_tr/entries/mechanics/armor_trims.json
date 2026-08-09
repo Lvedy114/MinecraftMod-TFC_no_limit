@@ -1,0 +1,18 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Zırh Süslemeleri",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:rib_armor_trim_smithing_template",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Zırh süslemeleri, bir $(thing)Süsleme Malzemesi$() ve bir $(l:mechanics/sewing_table)Demircilik Şablonu$() ile üretilir. TFC'de tüm değerli taşlar; Gümüş, Saf Gümüş, Altın, Gül Altını ve Bizmut ile birlikte süsleme malzemesi olarak kullanılabilir. Zırh süslemeleri tamamen kozmetiktir."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:smithing_table",
+      "text": "Demircilik masası, TFC zırhlarına zırh süslemeleri uygulamak için kullanılabilir."
+    }
+  ],
+  "read_by_default": true
+}

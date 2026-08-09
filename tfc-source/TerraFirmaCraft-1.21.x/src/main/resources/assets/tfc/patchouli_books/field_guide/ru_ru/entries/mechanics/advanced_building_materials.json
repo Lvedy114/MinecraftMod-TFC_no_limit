@@ -1,0 +1,107 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Продвинутые материалы",
+  "category": "tfc:mechanics",
+  "icon": "tfc:brick/rhyolite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Помимо примитивных $(l:getting_started/building_materials)строительных материалов$() каменного века, освоение металлических инструментов позволяет получить продвинутые строительные материалы"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br) 1. $(l:mechanics/advanced_building_materials#plaster)Штукатурка$()$(br) 2. $(l:mechanics/advanced_building_materials#bricks_and_mortar)Кирпичи и раствор$()$(br)",
+      "title": "Содержание"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "plaster",
+      "text": "Штукатурка — это строительный блок, изготовленный из $(l:the_world/ores_and_minerals#gypsum)гипса$(). Штукатурку можно сделать непосредственно из $(l:the_world/ores_and_minerals#gypsum)гипса$(), однако это неэффективно. Для повышения выхода запечатайте некоторое количество $(l:the_world/ores_and_minerals#gypsum)гипса$() и 100 мБ $(thing)известковой воды$() в бочке.",
+      "title": "Штукатурка"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/alabaster_brick",
+      "recipe2": "tfc:crafting/alabaster/bricks",
+      "title": "Кирпичи из штукатурки"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Штукатурку можно $(l:mechanics/dye)окрасить$() в $(l:mechanics/barrels)бочке$() с красителем в любой цвет. Блоки сырой штукатурки также могут быть $(l:mechanics/chisel)отшлифованы$() в $(thing)полированную штукатурку$() с использованием режима $(thing)шлифовки$() долота, или изготовлены в лестницы, плиты и стены.",
+      "title": "Декорации"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/alabaster/bricks/magenta_stairs",
+      "recipe2": "tfc:crafting/alabaster/polished/magenta_slab",
+      "title": "Лестницы и плиты"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "bricks_and_mortar",
+      "text": "$(thing)Каменные кирпичи$() могут быть сделаны с использованием $(l:mechanics/chisel)долота$() с некоторыми блоками сырой породы. Вам также потребуется $(thing)строительный раствор$(), чтобы сформировать кирпичи в прочный строительный блок.$(br2)Строительный раствор можно сделать, добавив $(thing)песок$() в бочку с $(l:mechanics/barrels#limewater)известковой водой$().",
+      "title": "Кирпичи и раствор"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/brick/gneiss",
+      "recipe2": "tfc:crafting/rock/bricks/gneiss"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Другие декоративные каменные блоки, такие как $(thing)треснувшие кирпичи$() и $(thing)резные камни$(), тоже можно сделать вручную. $(thing)Мшистые$() каменные блоки можно получить, поместив булыжник или кирпичи под воду, рядом с существующими мшистыми кирпичами или булыжником. Мох начнет распространяться на близлежащие блоки."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/rock/chiseled/gneiss",
+      "recipe2": "tfc:crafting/rock/cracked_bricks/gneiss"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:alabaster/raw": 2,
+    "tfc:alabaster/polished": 2,
+    "tfc:rock/chiseled/granite": 8,
+    "tfc:rock/chiseled/diorite": 8,
+    "tfc:rock/chiseled/gabbro": 8,
+    "tfc:rock/chiseled/shale": 8,
+    "tfc:rock/chiseled/claystone": 8,
+    "tfc:rock/chiseled/limestone": 8,
+    "tfc:rock/chiseled/conglomerate": 8,
+    "tfc:rock/chiseled/dolomite": 8,
+    "tfc:rock/chiseled/chert": 8,
+    "tfc:rock/chiseled/chalk": 8,
+    "tfc:rock/chiseled/tuff": 8,
+    "tfc:rock/chiseled/rhyolite": 8,
+    "tfc:rock/chiseled/basalt": 8,
+    "tfc:rock/chiseled/andesite": 8,
+    "tfc:rock/chiseled/dacite": 8,
+    "tfc:rock/chiseled/quartzite": 8,
+    "tfc:rock/chiseled/slate": 8,
+    "tfc:rock/chiseled/phyllite": 8,
+    "tfc:rock/chiseled/schist": 8,
+    "tfc:rock/chiseled/gneiss": 8,
+    "tfc:rock/chiseled/marble": 8,
+    "tfc:rock/cracked_bricks/granite": 8,
+    "tfc:rock/cracked_bricks/diorite": 8,
+    "tfc:rock/cracked_bricks/gabbro": 8,
+    "tfc:rock/cracked_bricks/shale": 8,
+    "tfc:rock/cracked_bricks/claystone": 8,
+    "tfc:rock/cracked_bricks/limestone": 8,
+    "tfc:rock/cracked_bricks/conglomerate": 8,
+    "tfc:rock/cracked_bricks/dolomite": 8,
+    "tfc:rock/cracked_bricks/chert": 8,
+    "tfc:rock/cracked_bricks/chalk": 8,
+    "tfc:rock/cracked_bricks/tuff": 8,
+    "tfc:rock/cracked_bricks/rhyolite": 8,
+    "tfc:rock/cracked_bricks/basalt": 8,
+    "tfc:rock/cracked_bricks/andesite": 8,
+    "tfc:rock/cracked_bricks/dacite": 8,
+    "tfc:rock/cracked_bricks/quartzite": 8,
+    "tfc:rock/cracked_bricks/slate": 8,
+    "tfc:rock/cracked_bricks/phyllite": 8,
+    "tfc:rock/cracked_bricks/schist": 8,
+    "tfc:rock/cracked_bricks/gneiss": 8,
+    "tfc:rock/cracked_bricks/marble": 8
+  }
+}

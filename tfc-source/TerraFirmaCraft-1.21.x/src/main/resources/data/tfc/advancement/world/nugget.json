@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/root",
+  "criteria": {
+    "small_ore_pieces": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:small_ore_pieces"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:ore/small_native_copper"
+    },
+    "title": {
+      "translate": "tfc.advancements.world.nugget.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.nugget.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "small_ore_pieces"
+    ]
+  ]
+}

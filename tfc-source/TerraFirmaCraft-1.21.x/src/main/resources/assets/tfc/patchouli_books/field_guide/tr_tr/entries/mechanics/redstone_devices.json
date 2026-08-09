@@ -1,0 +1,56 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Kızıltaş Cihazları",
+  "category": "tfc:mechanics",
+  "icon": "tfc:calendar_clock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dünyanızda yeterince ilerlediğinizde, rüzgar hızı veya günün saati gibi belirli koşulları ölçmek isteyebilirsiniz. Bunun için ihtiyaçlarınıza uygun olabilecek çeşitli cihazlar mevcuttur."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/redstone_devices.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/calendar_clock",
+      "text": "İlki $(thing)Hassas Saat$()'tir. Saat, saati veya $(item)$(k:key.use)$() ile değiştirildiğinde ayı algılar."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saat modundayken, saat 0 sinyalinin gece yarısı veya öğle vakti, 11 sinyalinin ise 11:00 veya 23:00 anlamına geldiği güçlü bir analog sinyal verir. Ay modundayken, saat 0 sinyalinin Ocak, 11 sinyalinin ise Aralık anlamına geldiği güçlü bir analog sinyal verir. Saatin sinyal gücünü okumak için karşılaştırıcıya ihtiyacınız yoktur."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/thermometer",
+      "text": "Sırada, ortam sıcaklığını veya üzerine yerleştirildiği cihazın sıcaklığını algılayan $(thing)Termometre$() var."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ortam sıcaklığını okurken Termometre, 0 sinyalinin -40°C, 15 sinyalinin ise +40°C anlamına geldiği güçlü bir analog sinyal verir. Cihaz sıcaklığını okurken Termometre, 0 sinyalinin ısı olmadığını, 15 sinyalinin ise Göz Alıcı Beyaz anlamına geldiği zayıf bir analog sinyal verir. Termometrenin sinyal gücünü okumak için karşılaştırıcıya ihtiyacınız yoktur."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/anemometer",
+      "title": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Anemometre$(), rüzgar hızını algılar. 0 sinyalinin 0 km/s, 15 sinyalinin ise 115 km/s anlamına geldiği güçlü bir analog sinyal verir. Anemometrenin sinyal gücünü okumak için karşılaştırıcıya ihtiyacınız yoktur."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vane",
+      "title": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Rüzgar Gülü$(), rüzgar yönünü algılar. 0 sinyalinin Kuzey, 8 sinyalinin ise Güney anlamına geldiği güçlü bir analog sinyal verir. Sinyal, rüzgar yönü saat yönünde ilerledikçe artar. Rüzgar Gülünün sinyal gücünü okumak için karşılaştırıcıya ihtiyacınız yoktur."
+    }
+  ],
+  "read_by_default": true
+}

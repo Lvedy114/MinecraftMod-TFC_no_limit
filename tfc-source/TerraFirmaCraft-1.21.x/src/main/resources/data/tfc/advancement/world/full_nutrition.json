@@ -1,0 +1,35 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/seeds",
+  "criteria": {
+    "special_condition": {
+      "trigger": "tfc:full_nutrition"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:food/rye_bread_sandwich",
+      "components": {
+        "tfc:food": {
+          "creation_date": -3
+        }
+      }
+    },
+    "title": {
+      "translate": "tfc.advancements.world.full_nutrition.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.full_nutrition.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "special_condition"
+    ]
+  ]
+}

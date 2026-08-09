@@ -1,0 +1,166 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Yapı Malzemeleri",
+  "category": "tfc:getting_started",
+  "icon": "tfc:wattle/unstained",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Oyunun ilk aşamalarında, birçok sağlam yapı bloğu metal aletler gerektirdiğinden inşaat yapmak zorlayıcı olabilir. Ancak, sadece taş aletlerle elde edilebilen birkaç yapı bloğu mevcuttur.$(br2)Daha fazla $(l:mechanics/advanced_building_materials)yapı bloğu$() metal aletlerle elde edilebilir."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Saz$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Çamur Tuğlalar$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Örgü ve Çamur Sıva$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Kil Bloklar ve Turba$()$(br)",
+      "title": "İçindekiler"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "thatch",
+      "text": "Sadece bir $(l:getting_started/introduction#knife)Taş Bıçak$() ile, bitki benzeri blokları kırarak $(thing)Saman$() elde edebilirsiniz. Bu, oldukça basit bir yapı malzemesi olan $(thing)Saz$() üretmek için kullanılabilir. Saz, yerçekiminden etkilenmeyen hafif bir bloktur; ancak oyuncular ve diğer varlıklar içinden doğrudan geçebilir! Gerektiğinde tekrar $(thing)Saman$() haline de getirilebilir.",
+      "title": "Saz"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/thatch",
+      "recipe2": "tfc:crafting/straw"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "mud_bricks",
+      "recipe": "tfc:crafting/drying_bricks/entisol",
+      "title": "Çamur Tuğlalar",
+      "text": "$(thing)Çamur$(), yerde, nehirlerin ve göllerin altında veya düşük rakımlı bataklık ortamlardaki bölgelerde bulunabilir. Biraz $(thing)Saman$() ile, $(thing)Islak Çamur Tuğlalar$() haline getirilebilir."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Bunlar kuru bir yerde yere yerleştirilebilir ve bir gün sonra sertleşerek $(thing)Çamur Tuğlalar$() haline gelirler.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:drying_bricks/entisol[count=4,dried=false]",
+            "Y": "tfc:grass/entisol"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:drying_bricks/entisol[count=4,dried=true]",
+            "Y": "tfc:grass/entisol"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/mud_bricks/entisol",
+      "title": " ",
+      "text": "Bu kurutulmuş çamur tuğlalar daha sonra $(thing)Çamur Tuğla Bloklar$() haline getirilebilir. İstenirse bunlardan $(thing)Merdivenler$(), $(thing)Basamaklar$() veya $(thing)Duvarlar$() da yapılabilir."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "#tfc:mud_bricks"
+        }
+      },
+      "name": "",
+      "text": "Çamur tuğlaların tüm farklı çeşitleri.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "wattle_and_daub",
+      "text": "$(thing)Örgü$() ve $(thing)Çamur Sıva$(), çok yönlü bir yapı ve dekorasyon bloğudur.$(br2)$(thing)Örgü$() üretilip yerleştirilebilir, ancak kırılabilir ve oyuncuların ve yaratıkların içinden geçmesine izin verir. Katı hale getirmek için $(thing)Çamur Sıva$() ile güçlendirilebilir.",
+      "title": "Örgü ve Çamur Sıva"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wattle",
+      "text": "$(thing)Örgü$() bloğunu katı hale getirmek için önce örülmesi gerekir, bu da yapıya çubuk eklemeyi gerektirir."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/daub",
+      "recipe2": "tfc:crafting/daub_from_mud",
+      "text": ""
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_weave.png"
+      ],
+      "text": "Örgüyü $(thing)örmek$() için dört çubuk gereklidir.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "İstediğiniz zaman, her bir köşegenin yanı sıra üst ve alt kısımlara da çubuk eklenebilir. Elinizde tek bir $(thing)Çubuk$() tutun ve eklemek için $(item)$(k:key.use)$() tuşunu kullanın. Yüzeyin farklı bir tarafını seçerek çubuğu örgünün hangi kısmına ekleyeceğinizi değiştirebilirsiniz."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+      ],
+      "text": "Örgüye çubuk ekleme.",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+      ],
+      "text": "$(thing)Örgü$() üzerine $(thing)Çamur Sıva$() kullanmak, katı bir blok oluşturur.",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/wattle_stained.png"
+      ],
+      "text": "Daha sonra üzerine $(l:mechanics/dye)Boya$() kullanılarak $(thing)renklendirilebilir$().",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "clay_and_peat",
+      "text": "Yerden elde edilen kil, kil blokları haline getirilebilir. Yerleştirilip tekrar kazıldıklarında, tekrar kile dönüşürler. Göze hoş görünmeseler de elde edilmeleri kolaydır.$(br2)Turba, dünyada su kütleleri boyunca yamalar halinde oluşur ve taş aletlerle kazılabilir. Üzerinde bazı bitkiler yetişir.$(br2)Ancak turba oldukça yanıcıdır.",
+      "title": "Kil Blokları ve Turba"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:clay",
+      "title": "Kil Blokları"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

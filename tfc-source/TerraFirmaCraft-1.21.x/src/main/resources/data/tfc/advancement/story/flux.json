@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:story/quern",
+  "criteria": {
+    "welding_flux": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:welding_flux"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:powder/flux"
+    },
+    "title": {
+      "translate": "tfc.advancements.story.flux.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.story.flux.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/rock/mossy_cobble/diorite.png"
+  },
+  "requirements": [
+    [
+      "welding_flux"
+    ]
+  ]
+}

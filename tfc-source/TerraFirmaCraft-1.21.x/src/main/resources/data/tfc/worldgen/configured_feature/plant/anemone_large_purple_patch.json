@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:rotatable_water_plant",
+  "config": {
+    "block": "tfc:plant/anemone_large_purple"
+  }
+}

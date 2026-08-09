@@ -1,0 +1,56 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Redstone Devices",
+  "category": "tfc:mechanics",
+  "icon": "tfc:calendar_clock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Once you advance far enough in your world, you may want to measure certain conditions, such as the wind speed or the time of the day. There are several devices that may suit your needs for this."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/redstone_devices.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/calendar_clock",
+      "text": "The first is the $(thing)Precision Clock$(). The Clock detects the hour, or, when toggled with $(item)$(k:key.use)$(), the month."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When in hour mode, the clock will output a strong analog signal where signal 0 means midnight or noon, and signal 11 means 11:00 or 23:00. When in month mode, the clock will output a strong analog signal where signal 0 means January, and signal 11 means December. You do not need a comparator to read the Clock's signal strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/thermometer",
+      "text": "Next we have the $(thing)Thermometer$(), which detects the ambient temperature, or the temperature of the device it is placed onto."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When reading ambient temperature, the Thermometer will output a strong analog signal where signal 0 means -40C, and signal 15 means +40C. When reading device temperature, the Thermometer will output a weak analog signal where signal 0 means no heat, and signal 15 means Brilliant White. You do not need a comparator to read the Thermometer's signal strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/anemometer",
+      "title": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Anemometer$() detects the wind speed. It outputs a strong analog signal where signal 0 means 0kmh, and signal 15 means 115 kmh. You do not need a comparator to read the Anemometer's signal strength."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vane",
+      "title": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Weather Vane$() detects the wind direction. It outputs a strong analog signal where signal 0 means North, and signal 8 means south. The signal increases as the wind direction proceeds clockwise. You do not need a comparator to read the Weather Vane's signal strength."
+    }
+  ],
+  "read_by_default": true
+}

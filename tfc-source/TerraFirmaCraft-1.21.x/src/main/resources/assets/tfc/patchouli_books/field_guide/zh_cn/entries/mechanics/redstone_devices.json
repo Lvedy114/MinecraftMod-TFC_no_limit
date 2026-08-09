@@ -1,0 +1,56 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "红石装置",
+  "category": "tfc:mechanics",
+  "icon": "tfc:calendar_clock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "当你在世界中发展到一定程度时，你可能想要测量某些条件，例如风速或一天中的时间。有几种装置可以满足你的需求。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/redstone_devices.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/calendar_clock",
+      "text": "第一个是$(thing)精密时钟$()。时钟可以检测小时，或者用$(item)$(k:key.use)$()切换后检测月份。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在小时模式下，时钟会输出强模拟信号，信号 0 表示午夜或正午，信号 11 表示 11:00 或 23:00。在月份模式下，时钟会输出强模拟信号，信号 0 表示一月，信号 11 表示十二月。读取时钟的信号强度不需要比较器。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/thermometer",
+      "text": "接下来是$(thing)温度计$()，它可以检测环境温度，或它所放置的设备的温度。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "读取环境温度时，温度计会输出强模拟信号，信号 0 表示 -40°C，信号 15 表示 +40°C。读取设备温度时，温度计会输出弱模拟信号，信号 0 表示无热量，信号 15 表示炽白色。读取温度计的信号强度不需要比较器。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/anemometer",
+      "title": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)风速计$()检测风速。它输出强模拟信号，信号 0 表示 0km/h，信号 15 表示 115km/h。读取风速计的信号强度不需要比较器。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vane",
+      "title": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)风向标$()检测风向。它输出强模拟信号，信号 0 表示北，信号 8 表示南。信号随着风向顺时针转动而增加。读取风向标的信号强度不需要比较器。"
+    }
+  ],
+  "read_by_default": true
+}

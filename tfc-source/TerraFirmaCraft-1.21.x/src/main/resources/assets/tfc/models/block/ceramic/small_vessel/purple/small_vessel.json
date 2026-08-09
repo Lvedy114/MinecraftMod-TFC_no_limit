@@ -1,0 +1,55 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"vessel": "tfc:block/ceramic/small_vessel/glazed/purple"
+	},
+	"elements": [
+		{
+			"from": [2, 6, 2],
+			"to": [5, 7, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"south": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#vessel"}
+			}
+		},
+		{
+			"from": [1, 7, 1],
+			"to": [6, 8, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 1, 0]},
+			"faces": {
+				"north": {"uv": [8, 0, 13, 1], "texture": "#vessel"},
+				"east": {"uv": [8, 0, 13, 1], "texture": "#vessel"},
+				"south": {"uv": [8, 0, 13, 1], "texture": "#vessel"},
+				"west": {"uv": [8, 0, 13, 1], "texture": "#vessel"},
+				"up": {"uv": [0, 3, 5, 8], "texture": "#vessel"},
+				"down": {"uv": [0, 0, 5, 5], "texture": "#vessel"}
+			}
+		},
+		{
+			"from": [2, 0.1, 2],
+			"to": [5, 1.1, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"south": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#vessel"},
+				"down": {"uv": [0, 0, 3, 3], "texture": "#vessel"}
+			}
+		},
+		{
+			"from": [1, 1, 1],
+			"to": [6, 6, 6],
+			"faces": {
+				"north": {"uv": [11, 2, 16, 7], "texture": "#vessel"},
+				"east": {"uv": [6, 2, 11, 7], "texture": "#vessel"},
+				"south": {"uv": [11, 2, 16, 7], "texture": "#vessel"},
+				"west": {"uv": [6, 2, 11, 7], "texture": "#vessel"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#vessel"},
+				"down": {"uv": [0, 0, 5, 5], "texture": "#vessel"}
+			}
+		}
+	]
+}

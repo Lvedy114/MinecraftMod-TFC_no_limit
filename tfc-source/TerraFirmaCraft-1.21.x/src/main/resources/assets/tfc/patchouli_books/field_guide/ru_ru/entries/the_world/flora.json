@@ -1,0 +1,364 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Растения",
+  "category": "tfc:the_world",
+  "icon": "tfc:plant/goldenrod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "В TerraFirmaCraft существует очень, очень, $(italic)очень$() много различных видов растений. Разные растения появляются в разных $(l:the_world/climate)климатических условиях$(), а их внешний вид может меняться в зависимости от текущего сезона — проходя через циклы цветения и покоя или меняя цвет с изменением температуры. Яркие цветы обычно можно измельчить в $(l:mechanics/quern)жёрнове$() для получения $(l:mechanics/dye)красителя$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Flowers can be $(thing)propagated$() by $(item)$(k:key.use)$() them with shears. This drops a $(thing)Flower Cutting$(). Crafting a Flower Cutting with Compost will give you two of the original flower back, thus duplicating it."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/anthurium"
+        }
+      },
+      "name": "Обычные",
+      "text": "Обычные растения похожи на маленькие цветы. Они растут на траве, земле и пашне.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/sagebrush"
+        }
+      },
+      "name": "Сухие",
+      "text": "Сухие растения похожи на обычные, но могут расти на песке. Они появляются только в районах с низким уровнем осадков.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "cacti",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/barrel_cactus[part=upper]",
+          "Y": "tfc:plant/barrel_cactus[part=lower]"
+        }
+      },
+      "name": "Кактусы",
+      "text": "Кактусы могут вырасти до двух блоков в высоту. Осторожно, колючие!",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/moss[down=true]"
+        }
+      },
+      "name": "Ползучие",
+      "text": "Ползучие растения принимают форму окружающих блоков. В основном они появляются пятнами на земле.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "XY"
+          ],
+          [
+            "0 "
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:wood/wood/birch",
+          "Y": "tfc:plant/licorice_fern[facing=south]"
+        }
+      },
+      "name": "Эпифиты",
+      "text": "Эпифиты живут только на боковых сторонах бревен.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/bluegrass"
+        }
+      },
+      "name": "Трава",
+      "text": "Блоки травы со временем вырастают выше. Вдобавок, они могут расти на торфе и грязи.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/king_fern[part=upper]",
+          "Y": "tfc:plant/king_fern[part=lower]"
+        }
+      },
+      "name": "Высокая трава",
+      "text": "Высокая трава достаточно высока, чтобы перекрывать ваше поле зрения.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/ivy[up=true,north=true]"
+        }
+      },
+      "name": "Лоза",
+      "text": "Лозы расползаются самостоятельно, если вокруг тепло.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/liana_plant",
+          "Y": "tfc:plant/liana"
+        }
+      },
+      "name": "Плачущие лоза",
+      "text": "Плачущая лоза растет вниз от блока-опоры.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/arundo",
+          "Y": "tfc:plant/arundo_plant"
+        }
+      },
+      "name": "Вьющиеся лозы",
+      "text": "Вьющиеся лозы вьются вверх от земли. Они могут быть в твердыми.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Водные растения могут расти либо в пресной, либо в солёной воде. В целом они растут и ведут себя как обычные растения, которые вы встречаете на поверхности. Некоторые водные растения можно приготовить.",
+      "title": "Водные растения"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/sago[fluid=water]"
+        }
+      },
+      "name": "Обычные водные",
+      "text": "Обычные водные растения можно срезать при помощи $(thing)$()ножа$(), чтобы получить $(thing)водоросли$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/manatee_grass[fluid=salt_water]"
+        }
+      },
+      "name": "Водная трава",
+      "text": "Водные травы — это травы, растущие под водой.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/cattail[part=upper]",
+          "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+        }
+      },
+      "name": "Высокие водные",
+      "text": "Высокие водные растения растут под водой. $(thing)Водный таро$() и $(thing)рогоз$() можно срезать с помощью $(thing)ножа$(), чтобы получить $(thing)корни$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/duckweed",
+          "Y": "minecraft:water"
+        }
+      },
+      "name": "Плавающие",
+      "text": "Плавающие растения находятся на поверхности воды. Лодки разрушают их при контакте.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/winged_kelp[fluid=salt_water]",
+          "Y": "tfc:plant/winged_kelp_plant[fluid=salt_water]"
+        }
+      },
+      "name": "Водоросли",
+      "text": "Водоросли — это вьющиеся лозы, которые растут под водой.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:plant/giant_kelp_flower[facing=up,fluid=salt_water]",
+          "Y": "tfc:plant/giant_kelp_plant[down=true,up=true,fluid=salt_water]"
+        }
+      },
+      "name": "Древовидные водоросли",
+      "text": "Древовидные водоросли вырастают в замысловатые подводные деревья. Их цветы можно срезать с помощью $(thing)ножа$().",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3,
+  "extra_recipe_mappings": {
+    "tfc:flower_cutting": 1
+  }
+}

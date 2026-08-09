@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Lambalar",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/lamp/bismuth_bronze",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Lambalar uzun ömürlü bir ışık kaynağıdır. Sıvı yakıtla çalışırlar. Lambalar kırıldıklarında içlerindeki yakıtı korurlar. Bir kova kullanarak, lambaya yakıt eklemek için $(item)$(k:key.use)$() tuşuna basın. Daha sonra bir $(thing)ateş başlatıcı$() veya ateş yakabilen herhangi bir şeyle yakılabilirler. $(thing)Zeytinyağı$() ve $(thing)İç Yağı$() lamba yakıtlarıdır. Yanan bir lambayı okla vurmak yangına neden olabilir."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/chain/copper[axis=y]",
+          "Y": "tfc:metal/lamp/copper[hanging=true,lit=true]"
+        }
+      },
+      "name": "Lambalar",
+      "text": "Zincirden sarkan yanan bir lamba.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/lamp/bronze",
+      "text": "Lambalar $(l:mechanics/anvils)Örs$() üzerinde dövülür ve tamamlanmaları için $(l:mechanics/glassworking_applications#lamp_glass)Lamba Camı$() ile üretilirler."
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "anchor": "olives",
+      "recipe": "tfc:quern/olive_paste",
+      "text": "Bir lamba yakıtı $(thing)Zeytinyağı$()dır. Üretiminin ilk adımı zeytin ezmesi yapmaktır."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/jute_net",
+      "text": "Ayrıca bir jüt ağa ihtiyacınız olacak."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Zeytin Ezmesi$()ni $(thing)Su$() ile bir $(l:mechanics/pot)Tencere$() içinde kaynatarak $(thing)Zeytinyağlı Su$() elde edin. Bunu $(thing)Jüt Ağ$()ınızla birlikte bir $(l:mechanics/barrels)Fıçı$() içinde mühürleyerek $(thing)Zeytinyağı$() üretin. Zeytinyağı, her bir sıvı birimi için oyun içi 6 saat boyunca yanar."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tallow",
+      "text": "Bir diğer lamba yakıtı $(thing)İç Yağı$()dır. Bunu yapmak için 5 adet $(thing)Balina Yağı$()nı, su dolu bir $(l:mechanics/pot)Tencere$() içinde pişirin. İç yağı, birim başına oyun içi 2 saat boyunca yanar. $(l:mechanics/lighting#candles)Mumlar$() yapmak için kullanılabilir."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/lamp/blue_steel[lit=true]"
+        }
+      },
+      "name": "Lav Lambaları",
+      "text": "Lav sonsuza dek yanmaya devam eder, ancak yalnızca bir $(l:mechanics/steel#blue_steel)Mavi Çelik$() lambada tutulabilir.",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/metal/chain/black_steel",
+      "text": "$(thing)Zincirler$(), lambalarınızı asmak için harika bir yoldur ve bir $(l:mechanics/anvils)Örs$() üzerinde dövülebilirler."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:lamps": 1
+  }
+}

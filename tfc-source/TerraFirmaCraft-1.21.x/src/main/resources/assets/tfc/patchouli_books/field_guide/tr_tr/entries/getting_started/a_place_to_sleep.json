@@ -1,0 +1,35 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Uyuyacak Bir Yer",
+  "category": "tfc:getting_started",
+  "icon": "tfc:medium_raw_hide",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Şaka bir yana! $(thing)Saz Yatak$(), geceyi uyuyarak geçirmenizi sağlamasa da yeniden doğma noktanızı belirlemek için kullanılabilecek ilkel bir yataktır. Bir saz yatak yapmak için iki $(thing)Saz$() bloğunu yan yana yerleştirin, ardından $(thing)Büyük Ham Deri$() ile sağ tıklayın. Büyük deriler, $(thing)ayılar$() ve $(thing)inekler$() gibi daha büyük hayvanlardan düşer."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " D ",
+            " 0 "
+          ]
+        ],
+        "mapping": {
+          "0": "tfc:thatch_bed[part=head,facing=east]",
+          "D": "tfc:thatch_bed[part=foot,facing=east]"
+        }
+      },
+      "name": "Saz Yatak",
+      "text": "İnşa edilmiş bir saz yatak.",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8,
+  "extra_recipe_mappings": {
+    "tfc:thatch_bed": 0
+  }
+}

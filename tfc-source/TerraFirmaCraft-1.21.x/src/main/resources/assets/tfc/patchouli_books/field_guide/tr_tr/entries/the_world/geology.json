@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Jeoloji",
+  "category": "tfc:the_world",
+  "icon": "tfc:rock/raw/shale",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TerraFirmaCraft dünyası, okyanuslarla birbirinden ayrılmış, kilometrelerce genişlikteki kara kütleleri olan büyük kıtalara bölünmüştür. Bunların içinde sıradağlar, nehirler ve daha birçok farklı ortam bulabilirsiniz."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/biomes/regions.png"
+      ],
+      "text": "Geniş ölçekte görüntülenen tipik bir TFC dünyası.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "rocks",
+      "text": "Dünya ayrıca farklı $(thing)Kaya$() türlerine ayrılmıştır. Kaya bölgeleri bir kilometreden daha geniş olabilir ve ayaklarınızın altında genellikle her zaman iki veya üç farklı kaya katmanı bulunur. Farklı cevherler farklı kaya türlerinde bulunduğundan, belirli kaya türlerini tespit etmek, genellikle yalnızca belirli kaya türlerinde ortaya çıkan $(l:the_world/ores_and_minerals)Cevherler$() gibi kaynakları bulmak için çok önemli olabilir.",
+      "title": "Kaya Katmanları"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/biomes/rock_layers.png"
+      ],
+      "text": "Bir TFC dünyasının kesiti.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Okyanus tabanları $(l:the_world/geology#igneous_extrusive)yüzey volkanik$() kayalardan oluşur; bunlar hızla soğuyan magmadan meydana gelen kayalardır. Yüzey volkanik kayaların altında muhtemelen aynı $(item)derece$()ye sahip bir $(l:the_world/geology)derinlik volkanik$() kaya bulunacaktır.$(br2)Örneğin, $(thing)Bazalt$() (mafik, yüzey volkanik bir kaya) altında muhtemelen $(thing)Gabro$() (mafik, derinlik volkanik bir kaya) bulunacaktır.",
+      "title": "Okyanus Tabanları"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l:https://en.wikipedia.org/wiki/Felsic)Felsik$() kayalar $(thing)Granit$() ve $(thing)Riyolit$()tir.$(li)$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Ara bileşimli$() kayalar $(thing)Andezit$(), $(thing)Dasit$() ve $(thing)Diyorit$()tir.$(li)$(l:https://en.wikipedia.org/wiki/Mafic)Mafik$() kayalar $(thing)Bazalt$() ve $(thing)Gabro$()dur.",
+      "title": "Volkanik Kaya Dereceleri"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bir kıtadaki en üst kaya katmanı ya yüzey volkanik ya da $(l:the_world/geology#sedimentary)tortul$() olacaktır. Tortul kayaların altında muhtemelen yukarıdaki kayanın $(l:the_world/geology#metamorphic)başkalaşmış$() biçimleri bulunacaktır.$(br2)Örneğin, $(thing)Mermer$() (bir başkalaşım kayası) muhtemelen $(thing)Kireç Taşı$() veya $(thing)Tebeşir$() altında bulunacaktır. Yüksek dereceli başkalaşım kayaları, diğer başkalaşım veya volkanik kayaların derinliklerinde bulunur."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Arduvaz$() ve $(thing)Fillit$(), $(thing)Şeyl$(), $(thing)Kil Taşı$() ve $(thing)Konglomera$() altında oluşur.$(li)$(thing)Mermer$(), $(thing)Kireç Taşı$(), $(thing)Dolomit$() ve $(thing)Tebeşir$() altında oluşur.$(li)$(thing)Kuvarsit$(), $(thing)Çört$() altında oluşur.$(li)$(thing)Şist$() ve $(thing)Gnays$(), $(thing)Arduvaz$() ve $(thing)Fillit$() veya derinlik volkanik kayaları altında oluşur.",
+      "title": "Başkalaşım Kayaları"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Son olarak, dağlık bölgelerde, başkalaşım veya derinlik volkanik kayaların yüzeyde bulunduğu $(thing)yükselim$() olayını da görebilirsiniz. Yükselim kayaları, diğer başkalaşım kayalarının üzerinde bulunabilir.$(br2)Buna ek olarak, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)Dayklar$() - derinlik volkanik kayaların küçük dikey dilimleri - dünyanın dört bir yanına dağılmış halde görünebilir,",
+      "title": "Yükselim Bölgeleri"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "üst kaya katmanlarının içinden geçerek dışarı çıkabilir.$(br2)Tüm bunları göz önünde bulundurarak, sonraki birkaç sayfa dört kategorideki tüm kayaları listeler: $(thing)Tortul$(), $(thing)Başkalaşım$(), $(thing)Yüzey Volkanik$() ve $(thing)Derinlik Volkanik$(). Bu kategoriler, kayanın nerede oluşabileceğini (önceki sayfalara bakınız) ve ayrıca bu kayada hangi cevherlerin oluşabileceğini belirler."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sedimentary",
+      "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Tortul$() kayalar, mineral veya organik parçacıkların birikmesi veya çökelmesiyle oluşur. Genellikle kıtasal alanlardaki en üst kaya katmanlarında bulunurlar. Bunlar:$(br)$(li)Şeyl$(li)Kil Taşı$(li)Kireç Taşı$(li)Konglomera$(li)Dolomit$(li)Çört$(li)Tebeşir",
+      "title": "Tortul"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "metamorphic",
+      "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Başkalaşım$() kayaları, başkalaşım adı verilen bir süreçle oluşur. Karşılık gelen tortul veya volkanik kayaların altında ya da yükselim bölgelerinde bulunabilirler. Bunlar:$(br)$(li)Kuvarsit$(li)Arduvaz$(li)Fillit$(li)Şist$(li)Gnays$(li)Mermer",
+      "title": "Başkalaşım"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "igneous_extrusive",
+      "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Yüzey Volkanik$() kayalar, Dünya yüzeyinde soğuyan magmadan oluşur. Kıtasal alanlardaki en üst kaya katmanında veya okyanus tabanlarında bulunabilirler. Bunlar:$(br)$(li)Riyolit$(li)Bazalt$(li)Andezit$(li)Dasit",
+      "title": "Yüzey Volkanik"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "igneous_intrusive",
+      "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Derinlik Volkanik$() kayalar, Dünya kabuğunun altında soğuyan magmadan oluşur. Yerin derinliklerinde veya nadiren dayklarda ya da yükselim bölgelerinde bulunabilirler. Bunlar:$(br)$(li)Granit$(li)Diyorit$(li)Gabro",
+      "title": "Derinlik Volkanik"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/root",
+  "criteria": {
+    "mud_brick_items": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:mud_brick_items"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:mud_brick/podzol"
+    },
+    "title": {
+      "translate": "tfc.advancements.world.mud_bricks.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.mud_bricks.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "mud_brick_items"
+    ]
+  ]
+}

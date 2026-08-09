@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:story/steel_age",
+  "criteria": {
+    "tools/black_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#tfc:tools/black_steel"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:metal/ingot/black_steel"
+    },
+    "title": {
+      "translate": "tfc.advancements.story.black_steel.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.story.black_steel.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/rock/mossy_cobble/diorite.png"
+  },
+  "requirements": [
+    [
+      "tools/black_steel"
+    ]
+  ]
+}

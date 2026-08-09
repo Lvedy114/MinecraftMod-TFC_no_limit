@@ -1,0 +1,186 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Çömlekçilik",
+  "category": "tfc:getting_started",
+  "icon": "tfc:ceramic/vessel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Kil$(), çömlekçilikte kullanılabilen son derece kullanışlı ve dengeli bir malzemedir. İlk başta yerini bulmak zor olabilir. Kil genellikle çimlerle gizlenmiştir ancak sıklıkla iki tür konumda bulunur. En az 175mm $(l:the_world/climate#rainfall)Yıllık Yağış$() alan bölgelerde kil, genellikle belirli $(thing)Bitkilerin$() varlığıyla işaret edilen yamalar halinde her yerde bulunabilir."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " C ",
+            "   "
+          ],
+          [
+            "XXX",
+            "X0X",
+            "XXX"
+          ]
+        ],
+        "mapping": {
+          "0": "tfc:clay_grass/aridisol",
+          "X": "tfc:clay_grass/aridisol",
+          "C": "#tfc:clay_indicators"
+        }
+      },
+      "name": "Kil Göstergeleri",
+      "text": "Kil ve varlığını işaret edebilecek bitkilerden biri.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "knapping",
+      "text": "$(thing)Athyrium Eğreltisi$(), $(thing)Canna$(), $(thing)Altınbaşak$(), $(thing)Pampa Otu$(), $(thing)Perovskia$() ve $(thing)Su Cannası$() yakında kil bulunduğuna işaret eder. Kil ayrıca nehirler, göller veya göletler gibi su kaynaklarının yakınındaki daha küçük yataklarda da bulunabilir.$(br2)Taşlarda olduğu gibi, kil de yeni eşyalar oluşturmak için yontulabilir. Yontmak için elinizde beş adet kil olması gerekir. Taşların aksine, bir hata yaparsanız yontma arayüzünü kapatıp kilinizi yeniden şekillendirebilir ve tekrar deneyebilirsiniz."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/clay_knapping.png"
+      ],
+      "text": "Yontma Arayüzü.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "vessel",
+      "text": "Küçük kap bu tür eşyalardan biridir. Tüm çömlek eşyaları gibi, kullanılmadan önce $(l:https://en.wikipedia.org/wiki/Pottery)pişirilmesi$() gerekir. Pişirme, eşyanın kilin sert bir $(thing)Seramik$() malzemeye dönüşeceği noktaya kadar $(l:mechanics/heating)ısıtılması$() işlemidir; bu da 1400 °C'ye veya $(#FFDF00)$(bold)$(t:Yellow White)Sarı Beyaz$() renge kadar ısıtılmayı gerektirir.$(br2)Bunu oyunun başlarında yapabilmek için bir $(l:getting_started/pit_kiln)Çukur Fırın$() kullanmanız gerekecektir.",
+      "title": "Küçük Kap"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_vessel",
+      "text": "Kil Küçük Kap Yontma."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:mechanics/decay#large_vessels)Büyük Kap$() da benzer bir şekilde oluşturulur. Yerleştirilebilir ve eşyalar için dokuz yuvaya sahiptir. Daha fazla bilgi için bağlantılı bölüme bakın.",
+      "title": "Büyük Kap"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_large_vessel",
+      "text": "Kil Büyük Kap Yontma."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "jug",
+      "text": "Bir diğer kullanışlı çömlek eşyası da $(thing)Sürahi$()'dir. Tatlı su gibi sıvıları almak ve $(thing)içmek$() için kullanılabilir.$(br2)Kullanmak için, sürahiyi dünyadaki sıvının üzerinde $(item)$(k:key.use)$() tuşuyla kullanmanız yeterlidir. Ardından içmek için sürahiyi kullanın. Sürahi tek seferde $(thing)100 mB$() sıvı tutabilir.",
+      "title": "Sürahi"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_jug",
+      "text": "Kil Sürahi Yontma."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "mold",
+      "text": "Kil, $(thing)Kalıplar$() yapmak için de gereklidir. Kalıpların içine eritilmiş metal dökülebilir ve bu metal zamanla kalıp şeklini alarak katılaşır. Eşya ve potansiyel olarak kalıp, kalıbın üzerinde $(item)$(k:key.use)$() tuşu kullanılarak geri alınabilir.$(br2)En basit kalıp türü, sağdaki külçe kalıbıdır.",
+      "title": "Kalıplar"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_ingot_mold",
+      "text": "Kil Külçe Kalıbı Yontma."
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/ceramic/ingot_mold",
+      "text": "Kalıbın kullanılabilir olması için, tüm kil eşyalar gibi pişirilmesi gerekir; bu işlem muhtemelen bir $(l:getting_started/pit_kiln)Çukur Fırın$()'da yapılacaktır.$(br2)Pişirildikten sonra içine eritilmiş metal dökülebilir. Metal yeterince soğuduğunda, kalıptan çıkarılabilir."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:ceramic/ingot_mold[tfc:fluid={id:\"tfc:metal/copper\",amount:100}]",
+      "title": "Döküm",
+      "link_recipes": false,
+      "text": "Sonraki birkaç sayfa, çeşitli aletler için bazı yontma desenlerini göstermektedir."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_propick_head_mold",
+      "text": "$(l:mechanics/prospecting#propick)Madenci Kazması$(), büyük miktarda cevher bulmak için temel bir alettir."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_pickaxe_head_mold",
+      "text": "Bir $(thing)Kazma$()! Madenciliğin temel aracıdır."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_saw_blade_mold",
+      "text": "Bir $(thing)Testere$(), $(thing)Çalışma Tezgahı$() gibi gelişmiş ahşap bileşenlerin ve $(l:mechanics/support_beams)Destekler$() gibi diğer birçok düzeneğin üretilmesi için gereken bir alettir."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_scythe_blade_mold",
+      "text": "Bir $(thing)Tırpan$(), 3x3x3'lük bir alandaki bitkileri ve yaprakları hasat edebilen bir alettir!"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_chisel_head_mold",
+      "text": "Bir $(l:mechanics/chisel)Keski$(), blokları düzleştirmek ve çok sayıda dekoratif blok oluşturmak için kullanılan bir alettir."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_axe_head_mold",
+      "text": "Tüm ağaç kesme işleriniz için bir $(thing)Balta$(). Taş baltaların metal olanlardan daha az verimli olduğunu unutmayın!"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_hammer_head_mold",
+      "text": "Bir $(thing)Çekiç$(), $(l:mechanics/anvils)Örsler$() oluşturmak ve üzerinde çalışmak için temel bir alettir."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_knife_blade_mold",
+      "text": "Bir $(thing)Bıçak$(), silah olarak veya bitki tipi bloklar için kesici bir alet olarak kullanılabilir."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_hoe_head_mold",
+      "text": "$(l:mechanics/crops)Ekinler$() dikmek ve bakımını yapmak için kullanılan bir $(thing)Çapa$()."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:knapping/ceramic/unfired_shovel_head_mold",
+      "text": "Tüm kazma işleriniz için bir $(thing)Kürek$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2,
+  "extra_recipe_mappings": {
+    "minecraft:clay": 0,
+    "tag:tfc:clay_indicators": 2,
+    "tfc:ceramic/unfired_vessel": 4,
+    "tfc:ceramic/vessel": 4,
+    "tfc:ceramic/unfired_jug": 8,
+    "tfc:ceramic/jug": 8,
+    "tfc:ceramic/unfired_ingot_mold": 11,
+    "tfc:ceramic/ingot_mold": 11,
+    "tfc:ceramic/unfired_propick_head_mold": 14,
+    "tfc:ceramic/unfired_pickaxe_head_mold": 15,
+    "tfc:ceramic/pickaxe_head_mold": 15,
+    "tfc:ceramic/unfired_saw_blade_mold": 16,
+    "tfc:ceramic/saw_blade_mold": 16,
+    "tfc:ceramic/unfired_scythe_blade_mold": 17,
+    "tfc:ceramic/scythe_blade_mold": 17,
+    "tfc:ceramic/unfired_chisel_head_mold": 18,
+    "tfc:ceramic/chisel_head_mold": 18,
+    "tfc:ceramic/unfired_axe_head_mold": 19,
+    "tfc:ceramic/axe_head_mold": 19,
+    "tfc:ceramic/unfired_hammer_head_mold": 20,
+    "tfc:ceramic/hammer_head_mold": 20,
+    "tfc:ceramic/unfired_knife_blade_mold": 21,
+    "tfc:ceramic/knife_blade_mold": 21,
+    "tfc:ceramic/unfired_hoe_head_mold": 22,
+    "tfc:ceramic/hoe_head_mold": 22,
+    "tfc:ceramic/unfired_shovel_head_mold": 23,
+    "tfc:ceramic/shovel_head_mold": 23
+  }
+}

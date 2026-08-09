@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "泵",
+  "category": "tfc:mechanics",
+  "icon": "tfc:steel_pipe",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)钢泵$()和$(thing)钢管$()是用于输送流体的方块，例如$(thing)水$()、$(thing)咸水$()和$(thing)温泉水$()。它们也可用于移动水源方块，并填充小型封闭区域。与$(l:mechanics/aqueducts)引水桥$()不同，它们还可以向上输送水源方块。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/steel_pipe",
+      "text": "钢管，顾名思义，可以用$(l:mechanics/steel)钢$()在$(l:mechanics/anvils)砧$()上锻造而成。$(thing)钢泵$()可以用一些$(thing)钢管$()和$(l:getting_started/primitive_alloys#brass)黄铜机件$()合成。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/steel_pump",
+      "text": "要操作泵，你还需要一个$(l:mechanics/crankshaft)曲轴$()和一个$(l:mechanics/mechanical_power)机械动力$()源：$(br)$(li)泵的$(bold)底部$()必须连接到一根管道。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)泵的窄边必须与$(l:mechanics/crankshaft)曲轴$()的工作端相邻。$(li)泵的有效距离可达$(bold)16$()格。管道的末端必须$(bold)浸没$()在目标流体中，并与一个水源流体方块相邻。$(li)如果曲轴在工作，流体就会被抽上来，出现在$(thing)泵$()的宽端。$(li)泵可以用水源方块填充一个最多$(bold)32$()格的封闭区域。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:steel_pipe": 0,
+    "tfc:steel_pump": 0
+  }
+}

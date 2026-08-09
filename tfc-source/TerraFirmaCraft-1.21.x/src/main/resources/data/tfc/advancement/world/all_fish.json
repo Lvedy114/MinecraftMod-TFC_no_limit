@@ -1,0 +1,289 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/fishing",
+  "criteria": {
+    "cod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/cod"
+          }
+        ]
+      }
+    },
+    "calamari": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/calamari"
+          }
+        ]
+      }
+    },
+    "shellfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/shellfish"
+          }
+        ]
+      }
+    },
+    "tropical_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/tropical_fish"
+          }
+        ]
+      }
+    },
+    "bluegill": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/bluegill"
+          }
+        ]
+      }
+    },
+    "crappie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/crappie"
+          }
+        ]
+      }
+    },
+    "lake_trout": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/lake_trout"
+          }
+        ]
+      }
+    },
+    "largemouth_bass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/largemouth_bass"
+          }
+        ]
+      }
+    },
+    "rainbow_trout": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/rainbow_trout"
+          }
+        ]
+      }
+    },
+    "salmon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/salmon"
+          }
+        ]
+      }
+    },
+    "smallmouth_bass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/smallmouth_bass"
+          }
+        ]
+      }
+    },
+    "arctic_char": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/arctic_char"
+          }
+        ]
+      }
+    },
+    "burbot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/burbot"
+          }
+        ]
+      }
+    },
+    "muksun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/muksun"
+          }
+        ]
+      }
+    },
+    "northern_pike": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/northern_pike"
+          }
+        ]
+      }
+    },
+    "spotted_gudgeon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/spotted_gudgeon"
+          }
+        ]
+      }
+    },
+    "tilapia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/tilapia"
+          }
+        ]
+      }
+    },
+    "peacock_bass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/peacock_bass"
+          }
+        ]
+      }
+    },
+    "pacu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/pacu"
+          }
+        ]
+      }
+    },
+    "red_piranha": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:food/red_piranha"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:food/rainbow_trout",
+      "components": {
+        "tfc:food": {
+          "creation_date": -3
+        }
+      }
+    },
+    "title": {
+      "translate": "tfc.advancements.world.all_fish.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.all_fish.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "cod"
+    ],
+    [
+      "calamari"
+    ],
+    [
+      "shellfish"
+    ],
+    [
+      "tropical_fish"
+    ],
+    [
+      "bluegill"
+    ],
+    [
+      "crappie"
+    ],
+    [
+      "lake_trout"
+    ],
+    [
+      "largemouth_bass"
+    ],
+    [
+      "rainbow_trout"
+    ],
+    [
+      "salmon"
+    ],
+    [
+      "smallmouth_bass"
+    ],
+    [
+      "arctic_char"
+    ],
+    [
+      "burbot"
+    ],
+    [
+      "muksun"
+    ],
+    [
+      "northern_pike"
+    ],
+    [
+      "spotted_gudgeon"
+    ],
+    [
+      "tilapia"
+    ],
+    [
+      "peacock_bass"
+    ],
+    [
+      "pacu"
+    ],
+    [
+      "red_piranha"
+    ]
+  ]
+}

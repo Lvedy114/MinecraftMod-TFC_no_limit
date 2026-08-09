@@ -1,0 +1,277 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:random_tree",
+  "config": {
+    "structures": [
+      "tfc:mangrove/1",
+      "tfc:mangrove/2",
+      "tfc:mangrove/3",
+      "tfc:mangrove/4",
+      "tfc:mangrove/5",
+      "tfc:mangrove/6",
+      "tfc:mangrove/7",
+      "tfc:mangrove/8",
+      "tfc:mangrove/9",
+      "tfc:mangrove/10",
+      "tfc:mangrove/11",
+      "tfc:mangrove/12"
+    ],
+    "radius": 1,
+    "placement": {
+      "width": 1,
+      "height": 3,
+      "ground_type": "floating"
+    },
+    "root_system": {
+      "blocks": [
+        {
+          "replace": [
+            "tfc:grass/entisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/entisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/entisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/entisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/aridisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/aridisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/aridisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/aridisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/oxisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/oxisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/oxisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/oxisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/fluvisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/fluvisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/fluvisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/fluvisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/andisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/andisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/andisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/andisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/podzol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/podzol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/podzol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/podzol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/alfisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/alfisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/alfisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/alfisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:grass/mollisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/mollisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:dirt/mollisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:rooted_dirt/mollisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/entisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/entisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/aridisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/aridisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/oxisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/oxisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/fluvisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/fluvisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/andisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/andisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/podzol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/podzol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/alfisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/alfisol"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:mud/mollisol"
+          ],
+          "with": [
+            {
+              "block": "tfc:muddy_roots/mollisol"
+            }
+          ]
+        }
+      ],
+      "width": 15,
+      "height": 8,
+      "tries": 1,
+      "special_placer": {
+        "skew_chance": 0.2
+      },
+      "required": true
+    }
+  }
+}

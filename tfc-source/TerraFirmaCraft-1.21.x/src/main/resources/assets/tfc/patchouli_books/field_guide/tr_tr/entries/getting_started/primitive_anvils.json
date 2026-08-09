@@ -1,0 +1,227 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "İlkel Örsler",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Oyunun başlarında aletleri doğrudan dökümle yapmaya bir alternatif ve daha üst seviye metaller için bir gereklilik, bir $(thing)Örs$() kullanmaktır. Örs, iki farklı işlem için kullanılabilen bir bloktur: $(l:mechanics/anvils#working)Şekillendirme$() ve $(l:mechanics/anvils#welding)Kaynaklama$(). Bu bölüm size sadece ilk ilkel taş örsünüzü nasıl elde edeceğinizi gösterecektir."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Öncelikle, $(thing)Yüzey Volkanik$() (Riyolit, Bazalt, Andezit veya Dasit) veya $(thing)Derinlik Volkanik$() (Granit, diyorit veya Gabro) türünde bir $(thing)Ham Kaya$() bloğu edinmeniz gerekir. Dünyada açıkta duran bir blok bulup kullanabilir veya çevredeki kayalardan bir tane $(l:getting_started/primitive_anvils#raw_rock)çıkarabilirsiniz$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "Ayrıca herhangi bir malzemeden yapılmış bir $(thing)Çekiç$() gerekecektir. Örsü yapmak için, bu ham kaya bloklarından birinin açıkta duran $(thing)üst$() yüzeyine $(thing)çekiç$() ile sağ tıklamanız yeterlidir; işte bu kadar! Bir örs oluşacaktır.$(br2)Örslerin $(l:mechanics/anvils#tiers)seviyeleri$() vardır ve taş örs 0. Seviyedir; yani en düşük seviyedir. Sadece I. Seviye külçeleri $(l:mechanics/anvils#welding)Kaynaklayabilir$().",
+      "title": "Taş Örs"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Ortadaki ham kayayı örse dönüştürme.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              " 0 "
+            ],
+            [
+              "RRR"
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        "tfc:rock_anvil"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "Bir ham kaya bloğunu daha küçük taşlara ayırmadan elde etmek için, onun $(thing)çıkarılması$() gerekir. Bir ham kaya bloğunun altı tarafındaki blokları da kazmalısınız; blok her taraftan hava ile çevrildiğinde, yerden alınabilecek bir eşya olarak düşecektir.",
+      "title": "Ham Kaya Elde Etme"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Bir ham taş parçasının altı tarafını da kazmak; işlem tamamlandığında, merkezdeki blok bir eşya olarak düşecektir.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

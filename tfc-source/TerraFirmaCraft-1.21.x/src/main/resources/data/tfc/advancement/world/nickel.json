@@ -1,0 +1,70 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/nugget",
+  "criteria": {
+    "small": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:ore/small_garnierite"
+          }
+        ]
+      }
+    },
+    "poor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:ore/poor_garnierite"
+          }
+        ]
+      }
+    },
+    "normal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:ore/normal_garnierite"
+          }
+        ]
+      }
+    },
+    "rich": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "tfc:ore/rich_garnierite"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "tfc:ore/small_garnierite"
+    },
+    "title": {
+      "translate": "tfc.advancements.world.nickel.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.nickel.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/fluvisol.png"
+  },
+  "requirements": [
+    [
+      "small",
+      "poor",
+      "normal",
+      "rich"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Вагонетки",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/chest_minecart/kapok",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Вагонетки$() — это средство транспортировки игроков, существ и крупных блоков. Блоки, которые обычно $(l:getting_started/size_and_weight#overburdening)перегружают$() игрока, можно перевозить в вагонетках. $(l:mechanics/decay#large_vessels)Крупные сосуды$(), $(l:mechanics/barrels)бочки$(), $(l:mechanics/powderkegs)пороховые бочки$(), $(l:mechanics/anvils)наковальни$() и $(l:mechanics/crucible)тигли$() можно добавить в вагонетку, нажав $(item)$(k:key.sneak)$() + $(item)$(k:key.use)$(). Нажатие $(item)$(k:key.sneak)$() с пустыми руками удаляет блок. Ковать вагонетки можно из $(thing)железа$() или $(thing)стали$(), при этом рецепты на основе стали дешевле."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:activator_rail",
+      "recipe2": "tfc:crafting/activator_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:detector_rail",
+      "recipe2": "tfc:crafting/detector_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:rail",
+      "recipe2": "tfc:crafting/rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:powered_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/chest_minecart/kapok",
+      "text": "$(thing)Вагонетки с сундуком$() работают так же, как обычные сундуки, в том смысле, что у них только 18 слотов и они не могут содержать очень крупные предметы, такие как бревна."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "minecraft:minecart": 0
+  }
+}
