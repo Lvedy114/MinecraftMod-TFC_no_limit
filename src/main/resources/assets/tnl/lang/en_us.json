@@ -1,13 +1,11 @@
 {
-  "itemGroup.tnl": "TFC No Limit Tab",
-  "block.tnl.example_block": "Example Block",
-  "item.tnl.example_item": "Example Item",
-
-  "tnl.configuration.title": "TFC No Limit Configs",
-  "tnl.configuration.section.tnl.common.toml": "TFC No Limit Configs",
-  "tnl.configuration.section.tnl.common.toml.title": "TFC No Limit Configs",
-  "tnl.configuration.items": "Item List",
-  "tnl.configuration.logDirtBlock": "Log Dirt Block",
-  "tnl.configuration.magicNumberIntroduction": "Magic Number Text",
-  "tnl.configuration.magicNumber": "Magic Number"
+  "tnl.configuration.title": "TFC No Limit Config",
+  "tnl.configuration.section.tnl.common.toml": "General",
+  "tnl.configuration.section.tnl.common.toml.title": "TFC No Limit",
+  "tnl.configuration.enableCustomStackSizes": "Enable custom stack sizes",
+  "tnl.configuration.veryLightStackSize": "Very light stack size",
+  "tnl.configuration.lightStackSize": "Light stack size",
+  "tnl.configuration.mediumStackSize": "Medium stack size",
+  "tnl.configuration.heavyStackSize": "Heavy stack size",
+  "tnl.configuration.veryHeavyStackSize": "Very heavy stack size"
 }

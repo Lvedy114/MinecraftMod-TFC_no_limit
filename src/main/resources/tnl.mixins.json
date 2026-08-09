@@ -5,7 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "tnl.refmap.json",
   "mixins": [
-    "TFCComponentsMixin"
+    "WeightAccessor"
   ],
   "client": [],
   "injectors": {
