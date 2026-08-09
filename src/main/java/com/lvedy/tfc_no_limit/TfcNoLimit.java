@@ -35,7 +35,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 @Mod(TfcNoLimit.MODID)
 public class TfcNoLimit {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "tfc_no_limit";
+    public static final String MODID = "tnl";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "tfc_no_limit" namespace
