@@ -1,0 +1,13 @@
+{
+  "itemGroup.tnl": "TFC No Limit Tab",
+  "block.tnl.example_block": "Example Block",
+  "item.tnl.example_item": "Example Item",
+
+  "tnl.configuration.title": "TFC No Limit Configs",
+  "tnl.configuration.section.tnl.common.toml": "TFC No Limit Configs",
+  "tnl.configuration.section.tnl.common.toml.title": "TFC No Limit Configs",
+  "tnl.configuration.items": "Item List",
+  "tnl.configuration.logDirtBlock": "Log Dirt Block",
+  "tnl.configuration.magicNumberIntroduction": "Magic Number Text",
+  "tnl.configuration.magicNumber": "Magic Number"
+}
