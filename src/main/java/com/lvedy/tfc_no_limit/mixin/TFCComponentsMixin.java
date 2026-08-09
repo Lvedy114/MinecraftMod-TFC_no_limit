@@ -18,33 +18,20 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 public class TFCComponentsMixin {
 
     @Inject(
-            method = "onModifyDefaultComponentsAfterResourceReload",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/core/component/DataComponentPatch$Builder;build()Lnet/minecraft/core/component/DataComponentPatch;",
-                    shift = At.Shift.BEFORE
-            ),
-            locals = LocalCapture.CAPTURE_FAILHARD,
+            method = "lambda$onModifyDefaultComponentsAfterResourceReload$2",
+            at = @At("TAIL"),
             remap = false
     )
-    private static void injectCustomStackSizes(
-            CallbackInfo ci,
-            boolean flag,
-            int modifiedCount,
-            net.minecraft.world.food.FoodProperties.Builder foodBuilder,
-            net.minecraft.world.food.FoodProperties defaultFood,
-            java.util.Iterator<?> iterator,
+    private static void overwriteMaxStackSize(
             Item item,
-            ItemStack stack,
-            boolean hasFood,
-            net.dries007.tfc.common.component.food.FoodDefinition foodDef,
-            boolean setFood,
             int currentMaxStackSize,
             int tfcStackSize,
-            DataComponentPatch.Builder patchBuilder
+            DataComponentPatch.Builder patchBuilder,
+            CallbackInfo ci
     ) {
         if (!Config.ENABLE_CUSTOM_STACK_SIZES.get()) return;
-
+        
+        ItemStack stack = new ItemStack(item);
         Weight weight = ItemSizeManager.get(stack).getWeight(stack);
 
         int newStackSize = 64;
@@ -60,9 +47,7 @@ public class TFCComponentsMixin {
             newStackSize = Config.VERY_HEAVY_STACK_SIZE.get();
         }
 
-        if (currentMaxStackSize != newStackSize) {
-            patchBuilder.set(DataComponents.MAX_STACK_SIZE, newStackSize);
-        }
+        patchBuilder.set(DataComponents.MAX_STACK_SIZE, newStackSize);
     }
 }
 

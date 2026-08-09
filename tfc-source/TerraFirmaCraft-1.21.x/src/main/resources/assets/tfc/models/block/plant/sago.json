@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/tinted_cross",
-  "textures": {
-    "cross": "tfc:block/plant/sago/sago",
-    "particle": "tfc:block/plant/sago/sago"
-  }
-}

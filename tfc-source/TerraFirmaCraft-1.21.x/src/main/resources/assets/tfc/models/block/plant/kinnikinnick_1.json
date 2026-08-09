@@ -1,8 +1,0 @@
-{
-  "parent": "tfc:block/short_bush",
-  "textures": {
-    "side": "tfc:block/plant/kinnikinnick/kinnikinnick_1",
-    "top": "tfc:block/plant/kinnikinnick/kinnikinnick_1",
-    "particle": "tfc:block/plant/kinnikinnick/kinnikinnick_1"
-  }
-}

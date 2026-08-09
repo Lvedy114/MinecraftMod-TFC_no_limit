@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/plant/flowerbed_1",
-  "textures": {
-    "flowerbed": "tfc:block/plant/yellow_saxifrage/petals",
-    "stem": "tfc:block/plant/yellow_saxifrage/stem"
-  }
-}

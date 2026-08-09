@@ -1,9 +1,0 @@
-{
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "tfc:block/alabaster/bricks/yellow",
-    "top": "tfc:block/alabaster/bricks/yellow",
-    "side": "tfc:block/alabaster/bricks/yellow"
-  }
-}

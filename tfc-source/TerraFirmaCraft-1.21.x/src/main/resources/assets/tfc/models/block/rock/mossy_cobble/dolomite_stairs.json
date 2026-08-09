@@ -1,9 +1,0 @@
-{
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "tfc:block/rock/mossy_cobble/dolomite",
-    "top": "tfc:block/rock/mossy_cobble/dolomite",
-    "side": "tfc:block/rock/mossy_cobble/dolomite"
-  }
-}

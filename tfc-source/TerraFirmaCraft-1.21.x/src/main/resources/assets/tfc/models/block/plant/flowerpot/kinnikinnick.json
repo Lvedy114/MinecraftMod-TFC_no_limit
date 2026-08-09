@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/template_potted_azalea_bush",
-  "textures": {
-    "plant": "tfc:block/plant/kinnikinnick/potted_plant",
-    "side": "tfc:block/plant/kinnikinnick/potted_side",
-    "top": "tfc:block/plant/kinnikinnick/potted_top"
-  }
-}

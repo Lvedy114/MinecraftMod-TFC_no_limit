@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "tfc:block/plant/azalea/upper_cross_3",
-    "particle": "tfc:block/plant/azalea/upper_cross_3"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/mixed_cross",
-  "textures": {
-    "cross": "tfc:block/plant/kangaroo_paw/kangaroo_paw_0b",
-	"tinted_cross": "tfc:block/plant/kangaroo_paw/kangaroo_paw_0"
-  }
-}

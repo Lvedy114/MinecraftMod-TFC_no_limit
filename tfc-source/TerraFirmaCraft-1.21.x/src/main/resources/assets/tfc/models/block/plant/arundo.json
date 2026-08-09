@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/mixed_cross",
-  "textures": {
-    "cross": "tfc:block/plant/arundo/tip",
-    "tinted_cross": "tfc:block/plant/arundo/tip_base"
-  }
-}
