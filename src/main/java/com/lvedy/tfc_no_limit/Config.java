@@ -35,9 +35,47 @@ public class Config {
             .comment("Max stack size for VERY_HEAVY items")
             .defineInRange("veryHeavyStackSize", 64, 1, 99);
 
+    static {
+        BUILDER.push("vanillaClimate");
+    }
+
+    public static final ModConfigSpec.BooleanValue ENABLE_VANILLA_TFC_CLIMATE = BUILDER
+            .comment("Enable TFC-style climate (latitude-based temperature, rainfall, seasonal weather) for worlds",
+                    "that use vanilla terrain generation. TFC-generated worlds are unaffected.",
+                    "Changes apply on world load, or immediately on config reload while the server is running.")
+            .define("enableVanillaTfcClimate", true);
+
+    public static final ModConfigSpec.DoubleValue VANILLA_TEMPERATURE_AVERAGE = BUILDER
+            .comment("The global average annual temperature (in °C) of vanilla-terrain worlds.",
+                    "TFC's own world generation effectively uses ~5.0.")
+            .defineInRange("temperatureAverage", 5.0, -40.0, 40.0);
+
+    public static final ModConfigSpec.DoubleValue VANILLA_TEMPERATURE_VARIANCE = BUILDER
+            .comment("The spatial variance (in °C²) of the annual average temperature across the world,",
+                    "controlling how much temperature varies between polar and equatorial regions.",
+                    "TFC's own world generation effectively uses ~208.3 (about -20°C at poles, +30°C at the equator).",
+                    "Set to 0 for a uniform-temperature world.")
+            .defineInRange("temperatureVariance", 208.3, 0.0, 2000.0);
+
+    static {
+        BUILDER.pop();
+    }
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     private Config() {
+    }
+
+    public static boolean isVanillaTfcClimateEnabled() {
+        return ENABLE_VANILLA_TFC_CLIMATE.get();
+    }
+
+    public static float getVanillaTemperatureAverage() {
+        return VANILLA_TEMPERATURE_AVERAGE.get().floatValue();
+    }
+
+    public static float getVanillaTemperatureVariance() {
+        return VANILLA_TEMPERATURE_VARIANCE.get().floatValue();
     }
 
     public static int getStackSize(Weight weight) {

@@ -10,6 +10,10 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.config.ModConfigEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.server.ServerLifecycleHooks;
+import net.minecraft.server.MinecraftServer;
+
+import com.lvedy.tfc_no_limit.climate.TNLClimateModels;
 
 @Mod(TfcNoLimit.MODID)
 public class TfcNoLimit {
@@ -21,6 +25,9 @@ public class TfcNoLimit {
         modEventBus.addListener(this::onConfigLoading);
         modEventBus.addListener(this::onConfigReloading);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        TNLClimateModels.TYPES.register(modEventBus);
+        VanillaClimateHandler.register();
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -40,6 +47,12 @@ public class TfcNoLimit {
         if (event.getConfig().getSpec() == Config.SPEC) {
             WeightStackSizeManager.applyConfiguredWeights();
             TFCComponents.onModifyDefaultComponentsAfterResourceReload();
+
+            // 让原版地形气候的开关与温度设置立即生效（重新选择并同步各维度的气候模型）
+            final MinecraftServer server = ServerLifecycleHooks.getCurrentServer();
+            if (server != null) {
+                VanillaClimateHandler.refreshClimateModels(server);
+            }
         }
     }
 }
